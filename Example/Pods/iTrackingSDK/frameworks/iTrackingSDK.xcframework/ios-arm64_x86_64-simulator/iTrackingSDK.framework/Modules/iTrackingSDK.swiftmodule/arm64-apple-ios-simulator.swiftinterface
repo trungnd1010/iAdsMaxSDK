@@ -15,7 +15,7 @@ public protocol iTrackingSDK_FirebaseAnalyticsDependecy {
 }
 @_hasMissingDesignatedInitializers public class iTrackingSDKManager {
   public static let shared: iTrackingSDK.iTrackingSDKManager
-  public func initAdjust(firebaseAnalytic: any iTrackingSDK.iTrackingSDK_FirebaseAnalyticsDependecy, isSandbox: Swift.Bool = false)
+  public func setup(firebaseAnalytic: any iTrackingSDK.iTrackingSDK_FirebaseAnalyticsDependecy, isSandbox: Swift.Bool = false)
   public func trackingAdjustToken(token: Swift.String)
   public func trackingAdjustAdRevenue(amount: Swift.Double, currency: Swift.String, source: Swift.String)
   public func trackingUserProperty(value: Swift.String?, forName: Swift.String)

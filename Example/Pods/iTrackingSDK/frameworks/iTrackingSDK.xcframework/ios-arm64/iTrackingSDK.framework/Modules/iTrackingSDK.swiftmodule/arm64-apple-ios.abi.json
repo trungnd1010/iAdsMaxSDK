@@ -198,8 +198,8 @@
           },
           {
             "kind": "Function",
-            "name": "initAdjust",
-            "printedName": "initAdjust(firebaseAnalytic:isSandbox:)",
+            "name": "setup",
+            "printedName": "setup(firebaseAnalytic:isSandbox:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -221,8 +221,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12iTrackingSDK01iA10SDKManagerC10initAdjust16firebaseAnalytic9isSandboxyAA01iaB27_FirebaseAnalyticsDependecy_p_SbtF",
-            "mangledName": "$s12iTrackingSDK01iA10SDKManagerC10initAdjust16firebaseAnalytic9isSandboxyAA01iaB27_FirebaseAnalyticsDependecy_p_SbtF",
+            "usr": "s:12iTrackingSDK01iA10SDKManagerC5setup16firebaseAnalytic9isSandboxyAA01iaB27_FirebaseAnalyticsDependecy_p_SbtF",
+            "mangledName": "$s12iTrackingSDK01iA10SDKManagerC5setup16firebaseAnalytic9isSandboxyAA01iaB27_FirebaseAnalyticsDependecy_p_SbtF",
             "moduleName": "iTrackingSDK",
             "declAttributes": [
               "AccessControl"
@@ -537,7 +537,7 @@
     {
       "filePath": "\/Users\/nguyentrung\/Repo\/itrackingsdk\/iTrackingSDK\/iTrackingSDKManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 510,
+      "offset": 505,
       "length": 5,
       "value": "false"
     },

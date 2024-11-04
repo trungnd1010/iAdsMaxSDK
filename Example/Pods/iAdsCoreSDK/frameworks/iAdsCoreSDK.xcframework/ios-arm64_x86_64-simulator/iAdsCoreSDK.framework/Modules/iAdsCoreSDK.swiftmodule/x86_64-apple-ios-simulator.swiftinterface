@@ -30,6 +30,17 @@ public protocol iAdsCoreSDK_IntertitialProtocol {
   func showAds(vc: UIKit.UIViewController, placement: Swift.String, priority: Swift.Int, completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
   static func make() -> any iAdsCoreSDK.iAdsCoreSDK_IntertitialProtocol
 }
+public enum iAdsCoreSDK_Error : Swift.Error {
+  case closeNoReward
+  public var errorMessage: Swift.String {
+    get
+  }
+  public static func == (a: iAdsCoreSDK.iAdsCoreSDK_Error, b: iAdsCoreSDK.iAdsCoreSDK_Error) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public protocol iAdsCoreSDK_BannerProtocol {
   var isLoading: Swift.Bool { get set }
   var isHasAds: Swift.Bool { get set }
@@ -170,6 +181,8 @@ public class iAdsCoreSDK_PaidAd {
   public func tracking(ad_platform: iAdsCoreSDK.iAdsCoreSDK_PaidAd.PaidAdPlatform, currency: Swift.String, value: Swift.Double, ad_unit_name: Swift.String, ad_network: Swift.String, ad_format: iAdsCoreSDK.iAdsCoreSDK_PaidAd.PaidAdAdFormat, sub_ad_format: iAdsCoreSDK.iAdsCoreSDK_PaidAd.PaidAdSubAdFormat, placement: Swift.String, ad_id: Swift.String)
   @objc deinit
 }
+extension iAdsCoreSDK.iAdsCoreSDK_Error : Swift.Equatable {}
+extension iAdsCoreSDK.iAdsCoreSDK_Error : Swift.Hashable {}
 extension iAdsCoreSDK.iAdsCoreSDK_AdTrack.AdTrackBool : Swift.Equatable {}
 extension iAdsCoreSDK.iAdsCoreSDK_AdTrack.AdTrackBool : Swift.Hashable {}
 extension iAdsCoreSDK.iAdsCoreSDK_AdTrack.AdTrackBool : Swift.RawRepresentable {}

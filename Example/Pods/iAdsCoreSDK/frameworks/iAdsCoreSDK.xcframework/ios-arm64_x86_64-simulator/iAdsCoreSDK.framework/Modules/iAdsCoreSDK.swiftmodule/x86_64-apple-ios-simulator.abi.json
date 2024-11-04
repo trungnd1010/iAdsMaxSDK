@@ -1086,6 +1086,233 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "iAdsCoreSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "iAdsCoreSDK_Error",
+        "printedName": "iAdsCoreSDK_Error",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "closeNoReward",
+            "printedName": "closeNoReward",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(iAdsCoreSDK.iAdsCoreSDK_Error.Type) -> iAdsCoreSDK.iAdsCoreSDK_Error",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "iAdsCoreSDK_Error",
+                    "printedName": "iAdsCoreSDK.iAdsCoreSDK_Error",
+                    "usr": "s:11iAdsCoreSDK01iabC6_ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "iAdsCoreSDK.iAdsCoreSDK_Error.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "iAdsCoreSDK_Error",
+                        "printedName": "iAdsCoreSDK.iAdsCoreSDK_Error",
+                        "usr": "s:11iAdsCoreSDK01iabC6_ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11iAdsCoreSDK01iabC6_ErrorO13closeNoRewardyA2CmF",
+            "mangledName": "$s11iAdsCoreSDK01iabC6_ErrorO13closeNoRewardyA2CmF",
+            "moduleName": "iAdsCoreSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "errorMessage",
+            "printedName": "errorMessage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11iAdsCoreSDK01iabC6_ErrorO12errorMessageSSvp",
+            "mangledName": "$s11iAdsCoreSDK01iabC6_ErrorO12errorMessageSSvp",
+            "moduleName": "iAdsCoreSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11iAdsCoreSDK01iabC6_ErrorO12errorMessageSSvg",
+                "mangledName": "$s11iAdsCoreSDK01iabC6_ErrorO12errorMessageSSvg",
+                "moduleName": "iAdsCoreSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "iAdsCoreSDK_Error",
+                "printedName": "iAdsCoreSDK.iAdsCoreSDK_Error",
+                "usr": "s:11iAdsCoreSDK01iabC6_ErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "iAdsCoreSDK_Error",
+                "printedName": "iAdsCoreSDK.iAdsCoreSDK_Error",
+                "usr": "s:11iAdsCoreSDK01iabC6_ErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11iAdsCoreSDK01iabC6_ErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s11iAdsCoreSDK01iabC6_ErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "iAdsCoreSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11iAdsCoreSDK01iabC6_ErrorO9hashValueSivp",
+            "mangledName": "$s11iAdsCoreSDK01iabC6_ErrorO9hashValueSivp",
+            "moduleName": "iAdsCoreSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11iAdsCoreSDK01iabC6_ErrorO9hashValueSivg",
+                "mangledName": "$s11iAdsCoreSDK01iabC6_ErrorO9hashValueSivg",
+                "moduleName": "iAdsCoreSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11iAdsCoreSDK01iabC6_ErrorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s11iAdsCoreSDK01iabC6_ErrorO4hash4intoys6HasherVz_tF",
+            "moduleName": "iAdsCoreSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11iAdsCoreSDK01iabC6_ErrorO",
+        "mangledName": "$s11iAdsCoreSDK01iabC6_ErrorO",
+        "moduleName": "iAdsCoreSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",

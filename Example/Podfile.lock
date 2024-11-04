@@ -3,15 +3,15 @@ PODS:
     - Adjust/Core (= 4.38.4)
   - Adjust/Core (4.38.4)
   - AppLovinSDK (13.0.1)
-  - iAdsCoreSDK (1.0.0):
+  - iAdsCoreSDK (1.3.0):
     - iTrackingSDK
-  - iAdsMaxSDK (1.1.0):
+  - iAdsMaxSDK (1.2.0):
     - AppLovinSDK
     - iAdsCoreSDK
     - iComponentsSDK
   - iComponentsSDK (1.0.0)
   - iReadFileConfigSDK (1.0.0)
-  - iTrackingSDK (1.1.0):
+  - iTrackingSDK (1.2.0):
     - Adjust (= 4.38.4)
     - iReadFileConfigSDK
 
@@ -34,11 +34,11 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Adjust: afda46df69f035fd216310fb85f399c40c61830a
   AppLovinSDK: fdae6a4361c9c9b09f8d7d18ede792368221d987
-  iAdsCoreSDK: 64da4e3db811cb8148f4d0d824844ae2815a7162
-  iAdsMaxSDK: a061f8f65f529dd10bc0985399cebeacd076bf87
+  iAdsCoreSDK: f862c9fd8802a31f6930ea5b43e912c8cf82fcd0
+  iAdsMaxSDK: 09059f5ae3d3329987d8debf017e69c8a79e9fe1
   iComponentsSDK: 56858f4f510d4bbbd1cf2526a4b7848eac9d5d9c
   iReadFileConfigSDK: 81543aa77b5b5c1a2669ef115e66c25482bdee23
-  iTrackingSDK: 2e37dae9d569784d99f93746645b0c194a3bd284
+  iTrackingSDK: 73b72f9089a8b13ae9dc9d105ab689850eb2dab1
 
 PODFILE CHECKSUM: 06259e14a005296848982aa707a9eb433d9a187f
 

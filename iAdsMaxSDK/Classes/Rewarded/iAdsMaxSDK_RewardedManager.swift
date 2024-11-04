@@ -78,6 +78,7 @@ extension iAdsMaxSDK_RewardedManager: MARewardedAdDelegate {
     public func didCollapse(_ ad: MAAd) {}
     
     public func didLoad(_ ad: MAAd) {
+        isLoading = false
         isHasAds = true
         
         iAdsCoreSDK_AdTrack().tracking(placement: "",
@@ -98,6 +99,7 @@ extension iAdsMaxSDK_RewardedManager: MARewardedAdDelegate {
     }
     
     public func didFailToLoadAd(forAdUnitIdentifier adUnitIdentifier: String, withError error: MAError) {
+        isLoading = false
         iAdsCoreSDK_AdTrack().tracking(placement: "",
                                        ad_status: .load_failed,
                                        ad_unit_name: adsId,
@@ -144,7 +146,12 @@ extension iAdsMaxSDK_RewardedManager: MARewardedAdDelegate {
                                        time: "",
                                        priority: priority,
                                        recall_ad: .no)
-        completionShow?(.success(()))
+        if didEarn {
+            completionShow?(.success(()))
+        } else {
+            completionShow?(.failure(iAdsCoreSDK_Error.closeNoReward))
+        }
+        
     }
     
     public func didClick(_ ad: MAAd) {

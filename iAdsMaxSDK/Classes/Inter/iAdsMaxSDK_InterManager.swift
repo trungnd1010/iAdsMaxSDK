@@ -72,7 +72,7 @@ extension iAdsMaxSDK_InterManager: MAAdViewAdDelegate {
     
     public func didLoad(_ ad: MAAd) {
         isHasAds = true
-        
+        isLoading = false
         iAdsCoreSDK_AdTrack().tracking(placement: "",
                                        ad_status: .loaded,
                                        ad_unit_name: adsId,
@@ -91,6 +91,7 @@ extension iAdsMaxSDK_InterManager: MAAdViewAdDelegate {
     }
     
     public func didFailToLoadAd(forAdUnitIdentifier adUnitIdentifier: String, withError error: MAError) {
+        isLoading = false
         iAdsCoreSDK_AdTrack().tracking(placement: "",
                                        ad_status: .load_failed,
                                        ad_unit_name: adsId,
