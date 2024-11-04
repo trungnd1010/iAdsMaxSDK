@@ -1,6 +1,0 @@
-framework module Pods_iAdsMaxSDK_Tests {
-  umbrella header "Pods-iAdsMaxSDK_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

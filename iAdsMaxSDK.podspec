@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'iAdsMaxSDK'
-  s.version          = '1.3.0'
+  s.version          = '1.4.0'
   s.summary          = 'A short description of iAdsMaxSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -37,4 +37,18 @@ TODO: Add long description of the pod here.
   s.dependency 'AppLovinSDK'
   s.dependency 'iAdsCoreSDK'
   s.dependency 'iComponentsSDK'
+  
+  s.dependency 'AmazonPublisherServicesSDK'
+  s.dependency 'AppLovinMediationAmazonAdMarketplaceAdapter'
+  s.dependency 'AppLovinMediationBidMachineAdapter'
+  s.dependency 'AppLovinMediationFyberAdapter'
+  s.dependency 'AppLovinMediationGoogleAdManagerAdapter'
+  s.dependency 'AppLovinMediationGoogleAdapter'
+  s.dependency 'AppLovinMediationInMobiAdapter'
+  s.dependency 'AppLovinMediationVungleAdapter'
+  s.dependency 'AppLovinMediationFacebookAdapter'
+  s.dependency 'AppLovinMediationMintegralAdapter'
+  s.dependency 'AppLovinMediationOguryPresageAdapter'
+  s.dependency 'AppLovinMediationByteDanceAdapter'
+  s.dependency 'AppLovinMediationUnityAdsAdapter'
 end

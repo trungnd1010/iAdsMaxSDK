@@ -1,6 +1,0 @@
-framework module iAdsCoreSDK {
-  umbrella header "iAdsCoreSDK.h"
-  export *
-
-  module * { export * }
-}

@@ -1,6 +1,0 @@
-framework module iComponentsSDK {
-  umbrella header "iComponentsSDK.h"
-  export *
-
-  module * { export * }
-}
