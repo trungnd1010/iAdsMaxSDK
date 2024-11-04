@@ -39,7 +39,7 @@ public class iAdsMaxSDK_BannerManager: NSObject, iAdsCoreSDK_BannerProtocol {
     //Max
     public func loadAds(vc: UIViewController,
                         collapsible: String?,
-                        isMrec: Bool,
+                        isMrec: Bool?,
                         adsId: String,
                         completion: @escaping (Result<Void, Error>) -> Void) {
         if self.isLoading {
@@ -49,7 +49,7 @@ public class iAdsMaxSDK_BannerManager: NSObject, iAdsCoreSDK_BannerProtocol {
         self.completionLoad = completion
         self.isLoading = true
         self.adsId = adsId
-        if isMrec {
+        if isMrec ?? false {
             bannerAd = MAAdView(adUnitIdentifier: adsId, adFormat: .mrec)
         } else {
             bannerAd = MAAdView(adUnitIdentifier: adsId, adFormat: (UIDevice.current.userInterfaceIdiom == .pad) ? .leader : .banner)

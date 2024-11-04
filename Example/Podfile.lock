@@ -52,9 +52,9 @@ PODS:
   - Google-Mobile-Ads-SDK (11.11.0):
     - GoogleUserMessagingPlatform (>= 1.1)
   - GoogleUserMessagingPlatform (2.7.0)
-  - iAdsCoreSDK (1.4.0):
+  - iAdsCoreSDK (1.5.0):
     - iTrackingSDK
-  - iAdsMaxSDK (1.5.0):
+  - iAdsMaxSDK (1.6.0):
     - AmazonPublisherServicesSDK
     - AppLovinMediationAmazonAdMarketplaceAdapter
     - AppLovinMediationBidMachineAdapter
@@ -210,8 +210,8 @@ SPEC CHECKSUMS:
   Fyber_Marketplace_SDK: 215c2020efd507c0e97f40871e96a26918f8986e
   Google-Mobile-Ads-SDK: 6d2fc31d83b7b13a7dee3d622f1538fa3324958a
   GoogleUserMessagingPlatform: a8b56893477f67212fbc8411c139e61d463349f5
-  iAdsCoreSDK: a81c34b3b392a1bc792deda91dbb60869e7e57ba
-  iAdsMaxSDK: 67180bd358ff1d1af2e592663f68e7b70efacbba
+  iAdsCoreSDK: 8fab6971c49966eee6068c4bb6774322ecf05579
+  iAdsMaxSDK: e81c296e8a564404a51e7acb7aeb79457ceb66bb
   iComponentsSDK: 56858f4f510d4bbbd1cf2526a4b7848eac9d5d9c
   InMobiSDK: ee53561ba1fd21787b1eb82f02da9b93067ffc8e
   iReadFileConfigSDK: 81543aa77b5b5c1a2669ef115e66c25482bdee23
