@@ -18,6 +18,7 @@
 				B2939161D379CF6EFD6FD89BF528F9BF /* PBXTargetDependency */,
 			);
 			name = iTrackingSDK;
+			productName = iTrackingSDK;
 		};
 		57CE8CD2A83F96AA46F0581B9E9EAA03 /* iReadFileConfigSDK */ = {
 			isa = PBXAggregateTarget;
@@ -28,6 +29,7 @@
 			dependencies = (
 			);
 			name = iReadFileConfigSDK;
+			productName = iReadFileConfigSDK;
 		};
 		5BC46914A3617E8E5EA6E625B5DD1684 /* AppLovinSDK */ = {
 			isa = PBXAggregateTarget;
@@ -38,6 +40,7 @@
 			dependencies = (
 			);
 			name = AppLovinSDK;
+			productName = AppLovinSDK;
 		};
 		79592F7F6AFCC433D5B7E15424D8D570 /* iComponentsSDK */ = {
 			isa = PBXAggregateTarget;
@@ -48,6 +51,7 @@
 			dependencies = (
 			);
 			name = iComponentsSDK;
+			productName = iComponentsSDK;
 		};
 		F4CA3867DE33786E1D530A58822E1FE1 /* iAdsCoreSDK */ = {
 			isa = PBXAggregateTarget;
@@ -59,6 +63,7 @@
 				40D3325234987C27965184B9A97FB8F5 /* PBXTargetDependency */,
 			);
 			name = iAdsCoreSDK;
+			productName = iAdsCoreSDK;
 		};
 /* End PBXAggregateTarget section */
 
@@ -76,6 +81,7 @@
 		201C25B2B0FC3AC6831F9ED9CAAEAAC1 /* ADJEventFailure.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A2BF9199241D33A427A3AE8A21DE99 /* ADJEventFailure.m */; };
 		2344F8E5292FF63EDD8F8C26B7C5358A /* ADJSessionParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 98DB55BA899343AB239497D9DD7D1333 /* ADJSessionParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2576D5D27AF00456571F2577EB47EB5C /* iAdsMaxSDK_Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D406203A01A8550D0B127A9806C4E5 /* iAdsMaxSDK_Error.swift */; };
+		2AA557912CD887B3002B8E9C /* iAdsMaxSDKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA557902CD887B3002B8E9C /* iAdsMaxSDKManager.swift */; };
 		2C9CB4E3566AB2E6F3EAD7D6D4E35FE5 /* ADJUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F8BB6D40B56E15952A04BE02E067DB /* ADJUserDefaults.m */; };
 		2F2C2194FCC6D5CB93C15D83E135FBB0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DE96DC511BD1CE643E8E9A8CE72374 /* SystemConfiguration.framework */; };
 		320AF22545A92C2CA96E4F114579DDF2 /* iAdsMaxSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 588333114C9E7226F83266F6531976D5 /* iAdsMaxSDK-dummy.m */; };
@@ -276,13 +282,14 @@
 		1EF98E715EC8DB332D7D7486E9A6F9D0 /* ADJSubscription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJSubscription.h; path = Adjust/ADJSubscription.h; sourceTree = "<group>"; };
 		20B494807D9E75F50A9EA12286872AB2 /* ADJPackageHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJPackageHandler.m; path = Adjust/ADJPackageHandler.m; sourceTree = "<group>"; };
 		252CB4BCED26161767E508999F508A24 /* Adjust-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Adjust-umbrella.h"; sourceTree = "<group>"; };
-		2B3EF61DF9C652314383D586CEAAF250 /* AppLovinSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppLovinSDK.xcframework; path = "applovin-ios-sdk-13.0.1/AppLovinSDK.xcframework"; sourceTree = "<group>"; };
+		2AA557902CD887B3002B8E9C /* iAdsMaxSDKManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iAdsMaxSDKManager.swift; sourceTree = "<group>"; };
+		2B3EF61DF9C652314383D586CEAAF250 /* AppLovinSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = AppLovinSDK.xcframework; path = "applovin-ios-sdk-13.0.1/AppLovinSDK.xcframework"; sourceTree = "<group>"; };
 		2B9246E89EA6D20F99D0BEE9379030E8 /* ADJUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJUtil.h; path = Adjust/ADJUtil.h; sourceTree = "<group>"; };
 		2BAAFC2AA7869B89850674452F54692D /* ADJAttribution.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJAttribution.m; path = Adjust/ADJAttribution.m; sourceTree = "<group>"; };
 		2F7618C72CBCC18435B78488E2210D5F /* ADJPurchaseVerificationHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJPurchaseVerificationHandler.h; path = Adjust/ADJPurchaseVerificationHandler.h; sourceTree = "<group>"; };
 		30453446C5310EA114B978294858C9A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		309D52A9B006B9A7DFE11D00C991A675 /* ADJSessionFailure.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJSessionFailure.h; path = Adjust/ADJSessionFailure.h; sourceTree = "<group>"; };
-		316AB4B3512E2314B0BB2294372FE0E7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		316AB4B3512E2314B0BB2294372FE0E7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		341086EE9DC1AE3337D83850F523344C /* ADJConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJConfig.m; path = Adjust/ADJConfig.m; sourceTree = "<group>"; };
 		379DAC957231033315A9D876667E303D /* ADJEventSuccess.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJEventSuccess.m; path = Adjust/ADJEventSuccess.m; sourceTree = "<group>"; };
 		38EFA71286FC3B14EDB7CF6E6B961E3F /* Adjust.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Adjust.modulemap; sourceTree = "<group>"; };
@@ -302,17 +309,17 @@
 		4C59E41FC8B6B167381AD4E3BDF4D37E /* iTrackingSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iTrackingSDK.debug.xcconfig; sourceTree = "<group>"; };
 		4CB7AB3B9A132067AD87412647F0A2E4 /* NSNumber+ADJAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+ADJAdditions.h"; path = "Adjust/ADJAdditions/NSNumber+ADJAdditions.h"; sourceTree = "<group>"; };
 		4CD0EF8D3D55587AD5C86E526437817A /* ADJActivityState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJActivityState.m; path = Adjust/ADJActivityState.m; sourceTree = "<group>"; };
-		52DB1482D041F5BEBBA627F3EC58AE4D /* iTrackingSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = iTrackingSDK.xcframework; path = frameworks/iTrackingSDK.xcframework; sourceTree = "<group>"; };
+		52DB1482D041F5BEBBA627F3EC58AE4D /* iTrackingSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = iTrackingSDK.xcframework; path = frameworks/iTrackingSDK.xcframework; sourceTree = "<group>"; };
 		5310ED7109FE093CAA61AF02F68763BE /* Pods-iAdsMaxSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iAdsMaxSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		54A2BF9199241D33A427A3AE8A21DE99 /* ADJEventFailure.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJEventFailure.m; path = Adjust/ADJEventFailure.m; sourceTree = "<group>"; };
 		55EDF3EB49E9750EE5544DFDA3F6827E /* ADJPackageParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJPackageParams.h; path = Adjust/ADJPackageParams.h; sourceTree = "<group>"; };
 		564DBF4A6B39F61EAFB754CD47BDF988 /* Pods-iAdsMaxSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iAdsMaxSDK_Tests.modulemap"; sourceTree = "<group>"; };
 		588333114C9E7226F83266F6531976D5 /* iAdsMaxSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iAdsMaxSDK-dummy.m"; sourceTree = "<group>"; };
-		58956164CA35AF9D55267E4F842D4A72 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Adjust/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		58956164CA35AF9D55267E4F842D4A72 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = Adjust/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		58CE1FCD8DE2E7B16433BB506E543634 /* Adjust-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Adjust-dummy.m"; sourceTree = "<group>"; };
 		6167B97BF5DD3EDF2E604A645BE48B25 /* iAdsMaxSDK_RewardedManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = iAdsMaxSDK_RewardedManager.swift; sourceTree = "<group>"; };
 		648F5FAB5FCDEE3A5F5E66DAE75C987C /* ADJEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJEvent.h; path = Adjust/ADJEvent.h; sourceTree = "<group>"; };
-		654097A13C076C9E692F1BEDB331D311 /* iReadFileConfigSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = iReadFileConfigSDK.xcframework; path = frameworks/iReadFileConfigSDK.xcframework; sourceTree = "<group>"; };
+		654097A13C076C9E692F1BEDB331D311 /* iReadFileConfigSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = iReadFileConfigSDK.xcframework; path = frameworks/iReadFileConfigSDK.xcframework; sourceTree = "<group>"; };
 		66C3E42966083514613A8B259FD113A5 /* ADJAdjustFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJAdjustFactory.h; path = Adjust/ADJAdjustFactory.h; sourceTree = "<group>"; };
 		69B6FAE33378097D58A726D37DB172F7 /* ADJSessionSuccess.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJSessionSuccess.m; path = Adjust/ADJSessionSuccess.m; sourceTree = "<group>"; };
 		69BC3D263BD178EB7EF9A47CCA051C63 /* NSData+ADJAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ADJAdditions.h"; path = "Adjust/ADJAdditions/NSData+ADJAdditions.h"; sourceTree = "<group>"; };
@@ -334,7 +341,7 @@
 		901D1D027B598C9DA2636B3BDA6DBD98 /* ADJLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJLogger.h; path = Adjust/ADJLogger.h; sourceTree = "<group>"; };
 		904DE0EA64BA62564BA0F5000E46F4CC /* iAdsMaxSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iAdsMaxSDK.release.xcconfig; sourceTree = "<group>"; };
 		920C5E63293D889553D13790D7F32952 /* ADJResponseData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJResponseData.h; path = Adjust/ADJResponseData.h; sourceTree = "<group>"; };
-		925AC74F26FF112C8C210F6AE4AB16AD /* iComponentsSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = iComponentsSDK.xcframework; path = frameworks/iComponentsSDK.xcframework; sourceTree = "<group>"; };
+		925AC74F26FF112C8C210F6AE4AB16AD /* iComponentsSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = iComponentsSDK.xcframework; path = frameworks/iComponentsSDK.xcframework; sourceTree = "<group>"; };
 		95744421C997B171A96AC2F81B4EBDAA /* ADJActivityHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJActivityHandler.h; path = Adjust/ADJActivityHandler.h; sourceTree = "<group>"; };
 		973C8F1E214FDB471F99EE6AA9EE2795 /* ADJActivityState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJActivityState.h; path = Adjust/ADJActivityState.h; sourceTree = "<group>"; };
 		973FA0BEA393DA3A0915592C9DE83D68 /* ADJUserDefaults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJUserDefaults.h; path = Adjust/ADJUserDefaults.h; sourceTree = "<group>"; };
@@ -342,8 +349,8 @@
 		9A32206FA26A3B952B8656C698F8A1A9 /* ADJThirdPartySharing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJThirdPartySharing.h; path = Adjust/ADJThirdPartySharing.h; sourceTree = "<group>"; };
 		9B326895987A8A2970F4FA031E5E13D3 /* ADJPurchaseVerificationResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJPurchaseVerificationResult.h; path = Adjust/ADJPurchaseVerificationResult.h; sourceTree = "<group>"; };
 		9C127C8D7417AA184765E52A5633A6A8 /* AppLovinSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppLovinSDK.debug.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E16A0D00FB7E4C72CDF914E5104B862 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E16A0D00FB7E4C72CDF914E5104B862 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9FC2E30502F5F71042A2A993FE7AC028 /* ADJAttributionHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJAttributionHandler.m; path = Adjust/ADJAttributionHandler.m; sourceTree = "<group>"; };
 		A157AA95E313A07F4BF46284401899F6 /* iTrackingSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "iTrackingSDK-xcframeworks.sh"; sourceTree = "<group>"; };
 		A8300C5740773DE89D0B5D78D4B9CF16 /* ADJUrlStrategy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJUrlStrategy.m; path = Adjust/ADJUrlStrategy.m; sourceTree = "<group>"; };
@@ -388,13 +395,13 @@
 		EBDD120978AE18D528389324EBC8B09E /* ADJAdRevenue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJAdRevenue.h; path = Adjust/ADJAdRevenue.h; sourceTree = "<group>"; };
 		ECD603D6D9D4D67B200F9C664BB23E9B /* Adjust-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Adjust-prefix.pch"; sourceTree = "<group>"; };
 		ECE29285AA70BB5A08286FDFF71CEB4C /* Pods-iAdsMaxSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iAdsMaxSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		ECEEFA5E0A31D30500AC8682E7CE4F3D /* iAdsCoreSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = iAdsCoreSDK.xcframework; path = frameworks/iAdsCoreSDK.xcframework; sourceTree = "<group>"; };
+		ECEEFA5E0A31D30500AC8682E7CE4F3D /* iAdsCoreSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = iAdsCoreSDK.xcframework; path = frameworks/iAdsCoreSDK.xcframework; sourceTree = "<group>"; };
 		EE9A142378ABDFF6595114510CEAF856 /* Pods-iAdsMaxSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iAdsMaxSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		EF755655269D12AE675EC2721B310AA5 /* ADJLinkResolution.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJLinkResolution.h; path = Adjust/ADJLinkResolution.h; sourceTree = "<group>"; };
 		F08D7C93E84422761BD580D32B6FC73B /* ADJAdjustFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJAdjustFactory.m; path = Adjust/ADJAdjustFactory.m; sourceTree = "<group>"; };
 		F0C9E131E35851BB39145E92E7A0E1EF /* ADJUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJUtil.m; path = Adjust/ADJUtil.m; sourceTree = "<group>"; };
 		F0D406203A01A8550D0B127A9806C4E5 /* iAdsMaxSDK_Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iAdsMaxSDK_Error.swift; path = iAdsMaxSDK/Classes/iAdsMaxSDK_Error.swift; sourceTree = "<group>"; };
-		F1EDD4B23CB9459767B3BEF51D6EB1D0 /* iAdsMaxSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = iAdsMaxSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F1EDD4B23CB9459767B3BEF51D6EB1D0 /* iAdsMaxSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = iAdsMaxSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F1F8BB6D40B56E15952A04BE02E067DB /* ADJUserDefaults.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJUserDefaults.m; path = Adjust/ADJUserDefaults.m; sourceTree = "<group>"; };
 		F25BFF9DDE3CF39F38B01A4BC67C5E43 /* iComponentsSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iComponentsSDK.debug.xcconfig; sourceTree = "<group>"; };
 		F6CD19877C7D52F6313EEC7C6F26345A /* iAdsMaxSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iAdsMaxSDK-umbrella.h"; sourceTree = "<group>"; };
@@ -454,7 +461,6 @@
 				BFB3828B33A76D7512229D874905C028 /* Core */,
 				CBEAB24FFF99775D09ED225411B0961B /* Support Files */,
 			);
-			name = Adjust;
 			path = Adjust;
 			sourceTree = "<group>";
 		};
@@ -464,7 +470,6 @@
 				E05E09BD01A30AFF418F40FC6BBCAB5D /* Frameworks */,
 				2042B15C7534D8434BA9E30D382B14AD /* Support Files */,
 			);
-			name = iAdsCoreSDK;
 			path = iAdsCoreSDK;
 			sourceTree = "<group>";
 		};
@@ -502,7 +507,6 @@
 				8D8E7E88C7DEFA4C5E30B9EC529DEDD0 /* Frameworks */,
 				FEDE9F9E3E132AE065D867972995A7E8 /* Support Files */,
 			);
-			name = iTrackingSDK;
 			path = iTrackingSDK;
 			sourceTree = "<group>";
 		};
@@ -588,7 +592,6 @@
 				4188CBCE8E5BE49FAE535824B0A6D825 /* Frameworks */,
 				79EE04AF19D9320CEA36ED8468631D4F /* Support Files */,
 			);
-			name = AppLovinSDK;
 			path = AppLovinSDK;
 			sourceTree = "<group>";
 		};
@@ -638,6 +641,7 @@
 				018C51AF74D16C3C2FFF15D797FDC991 /* Pod */,
 				21BE3861722CCD005B19DCD83AA05D7C /* Rewarded */,
 				45FEAFADB9E2B47CE467037A2FA38B44 /* Support Files */,
+				2AA557902CD887B3002B8E9C /* iAdsMaxSDKManager.swift */,
 			);
 			name = iAdsMaxSDK;
 			path = ../..;
@@ -804,7 +808,6 @@
 				213924443D507A9C8A9EEE674183A371 /* Frameworks */,
 				91086EBCCCAFD3B29866548663AECB66 /* Support Files */,
 			);
-			name = iComponentsSDK;
 			path = iComponentsSDK;
 			sourceTree = "<group>";
 		};
@@ -842,7 +845,6 @@
 				C241CCFE2DCCBB3727653BFFA1A34D1A /* Frameworks */,
 				AE275A7A8E77FFA10B3EC4B2FF04B667 /* Support Files */,
 			);
-			name = iReadFileConfigSDK;
 			path = iReadFileConfigSDK;
 			sourceTree = "<group>";
 		};
@@ -1034,7 +1036,6 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			minimizedProjectReferenceProxies = 0;
 			productRefGroup = 35D5CD256CF0CEB06C1B933E12BD3CDA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1192,6 +1193,7 @@
 			files = (
 				320AF22545A92C2CA96E4F114579DDF2 /* iAdsMaxSDK-dummy.m in Sources */,
 				2576D5D27AF00456571F2577EB47EB5C /* iAdsMaxSDK_Error.swift in Sources */,
+				2AA557912CD887B3002B8E9C /* iAdsMaxSDKManager.swift in Sources */,
 				9F0D4BAEFE2F447FFD08FB4B3D435A0D /* iAdsMaxSDK_InterManager.swift in Sources */,
 				7F588BA654CF5FAEAF88CC4BDC9C3B7E /* iAdsMaxSDK_NativeManager.swift in Sources */,
 				EAD596934112436E2BC3E780BBD23FE3 /* iAdsMaxSDK_OpenManager.swift in Sources */,
@@ -1676,8 +1678,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
