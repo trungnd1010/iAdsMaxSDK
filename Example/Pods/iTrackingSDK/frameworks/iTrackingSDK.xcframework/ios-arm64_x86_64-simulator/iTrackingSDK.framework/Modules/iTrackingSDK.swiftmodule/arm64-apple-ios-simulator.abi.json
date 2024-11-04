@@ -1,0 +1,559 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "iTrackingSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "iTrackingSDK_FirebaseAnalyticsDependecy",
+        "printedName": "iTrackingSDK_FirebaseAnalyticsDependecy",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "setUserProperty",
+            "printedName": "setUserProperty(_:forName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12iTrackingSDK01iaB27_FirebaseAnalyticsDependecyP15setUserProperty_7forNameySSSg_SStF",
+            "mangledName": "$s12iTrackingSDK01iaB27_FirebaseAnalyticsDependecyP15setUserProperty_7forNameySSSg_SStF",
+            "moduleName": "iTrackingSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : iTrackingSDK.iTrackingSDK_FirebaseAnalyticsDependecy>",
+            "sugared_genericSig": "<Self where Self : iTrackingSDK.iTrackingSDK_FirebaseAnalyticsDependecy>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logEvent",
+            "printedName": "logEvent(_:parameters:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12iTrackingSDK01iaB27_FirebaseAnalyticsDependecyP8logEvent_10parametersySS_SDySSypGSgtF",
+            "mangledName": "$s12iTrackingSDK01iaB27_FirebaseAnalyticsDependecyP8logEvent_10parametersySS_SDySSypGSgtF",
+            "moduleName": "iTrackingSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : iTrackingSDK.iTrackingSDK_FirebaseAnalyticsDependecy>",
+            "sugared_genericSig": "<Self where Self : iTrackingSDK.iTrackingSDK_FirebaseAnalyticsDependecy>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:12iTrackingSDK01iaB27_FirebaseAnalyticsDependecyP",
+        "mangledName": "$s12iTrackingSDK01iaB27_FirebaseAnalyticsDependecyP",
+        "moduleName": "iTrackingSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Adjust",
+        "printedName": "Adjust",
+        "declKind": "Import",
+        "moduleName": "iTrackingSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "iReadFileConfigSDK",
+        "printedName": "iReadFileConfigSDK",
+        "declKind": "Import",
+        "moduleName": "iTrackingSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "iTrackingSDKManager",
+        "printedName": "iTrackingSDKManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "iTrackingSDKManager",
+                "printedName": "iTrackingSDK.iTrackingSDKManager",
+                "usr": "s:12iTrackingSDK01iA10SDKManagerC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12iTrackingSDK01iA10SDKManagerC6sharedACvpZ",
+            "mangledName": "$s12iTrackingSDK01iA10SDKManagerC6sharedACvpZ",
+            "moduleName": "iTrackingSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "iTrackingSDKManager",
+                    "printedName": "iTrackingSDK.iTrackingSDKManager",
+                    "usr": "s:12iTrackingSDK01iA10SDKManagerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12iTrackingSDK01iA10SDKManagerC6sharedACvgZ",
+                "mangledName": "$s12iTrackingSDK01iA10SDKManagerC6sharedACvgZ",
+                "moduleName": "iTrackingSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initAdjust",
+            "printedName": "initAdjust(firebaseAnalytic:isSandbox:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "iTrackingSDK_FirebaseAnalyticsDependecy",
+                "printedName": "any iTrackingSDK.iTrackingSDK_FirebaseAnalyticsDependecy",
+                "usr": "s:12iTrackingSDK01iaB27_FirebaseAnalyticsDependecyP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12iTrackingSDK01iA10SDKManagerC10initAdjust16firebaseAnalytic9isSandboxyAA01iaB27_FirebaseAnalyticsDependecy_p_SbtF",
+            "mangledName": "$s12iTrackingSDK01iA10SDKManagerC10initAdjust16firebaseAnalytic9isSandboxyAA01iaB27_FirebaseAnalyticsDependecy_p_SbtF",
+            "moduleName": "iTrackingSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackingAdjustToken",
+            "printedName": "trackingAdjustToken(token:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12iTrackingSDK01iA10SDKManagerC19trackingAdjustToken5tokenySS_tF",
+            "mangledName": "$s12iTrackingSDK01iA10SDKManagerC19trackingAdjustToken5tokenySS_tF",
+            "moduleName": "iTrackingSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackingAdjustAdRevenue",
+            "printedName": "trackingAdjustAdRevenue(amount:currency:source:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12iTrackingSDK01iA10SDKManagerC23trackingAdjustAdRevenue6amount8currency6sourceySd_S2StF",
+            "mangledName": "$s12iTrackingSDK01iA10SDKManagerC23trackingAdjustAdRevenue6amount8currency6sourceySd_S2StF",
+            "moduleName": "iTrackingSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackingUserProperty",
+            "printedName": "trackingUserProperty(value:forName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12iTrackingSDK01iA10SDKManagerC20trackingUserProperty5value7forNameySSSg_SStF",
+            "mangledName": "$s12iTrackingSDK01iA10SDKManagerC20trackingUserProperty5value7forNameySSSg_SStF",
+            "moduleName": "iTrackingSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackingEvent",
+            "printedName": "trackingEvent(name:parameters:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12iTrackingSDK01iA10SDKManagerC13trackingEvent4name10parametersySS_SDySSypGSgtF",
+            "mangledName": "$s12iTrackingSDK01iA10SDKManagerC13trackingEvent4name10parametersySS_SDySSypGSgtF",
+            "moduleName": "iTrackingSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackingAdjustPurchases",
+            "printedName": "trackingAdjustPurchases(token:orderId:productId:transactionDate:price:currency:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSDecimalNumber",
+                "printedName": "Foundation.NSDecimalNumber",
+                "usr": "c:objc(cs)NSDecimalNumber"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12iTrackingSDK01iA10SDKManagerC23trackingAdjustPurchases5token7orderId07productI015transactionDate5price8currencyySS_S2S10Foundation0L0VSo15NSDecimalNumberCSStF",
+            "mangledName": "$s12iTrackingSDK01iA10SDKManagerC23trackingAdjustPurchases5token7orderId07productI015transactionDate5price8currencyySS_S2S10Foundation0L0VSo15NSDecimalNumberCSStF",
+            "moduleName": "iTrackingSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackingAdjustSubscription",
+            "printedName": "trackingAdjustSubscription(token:orderId:productId:receiptData:transactionDate:salesRegion:price:currency:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSDecimalNumber",
+                "printedName": "Foundation.NSDecimalNumber",
+                "usr": "c:objc(cs)NSDecimalNumber"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12iTrackingSDK01iA10SDKManagerC26trackingAdjustSubscription5token7orderId07productI011receiptData15transactionDate11salesRegion5price8currencyySS_S2S10Foundation0L0VAM0N0VSSSo15NSDecimalNumberCSStF",
+            "mangledName": "$s12iTrackingSDK01iA10SDKManagerC26trackingAdjustSubscription5token7orderId07productI011receiptData15transactionDate11salesRegion5price8currencyySS_S2S10Foundation0L0VAM0N0VSSSo15NSDecimalNumberCSStF",
+            "moduleName": "iTrackingSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:12iTrackingSDK01iA10SDKManagerC",
+        "mangledName": "$s12iTrackingSDK01iA10SDKManagerC",
+        "moduleName": "iTrackingSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "iTrackingSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/nguyentrung\/Repo\/itrackingsdk\/iTrackingSDK\/iTrackingSDKManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 510,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/nguyentrung\/Repo\/itrackingsdk\/iTrackingSDK\/iTrackingSDK_Const.swift",
+      "kind": "StringLiteral",
+      "offset": 198,
+      "length": 5,
+      "value": "\"key\""
+    },
+    {
+      "filePath": "\/Users\/nguyentrung\/Repo\/itrackingsdk\/iTrackingSDK\/iTrackingSDK_Const.swift",
+      "kind": "StringLiteral",
+      "offset": 238,
+      "length": 13,
+      "value": "\"ikvn2014312\""
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name iComponentsSDK
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_exported import iComponentsSDK
+extension ObjectiveC.NSObject {
+  public var iComponentsSDK_fullClassName: Swift.String {
+    get
+  }
+}
+extension Foundation.UserDefaults {
+  public var numSession: Swift.Int {
+    get
+    set
+  }
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func iComponentsSDK_removeAllSubviews()
+  @_Concurrency.MainActor(unsafe) public func iComponentsSDK_addSubView(subView: UIKit.UIView)
+}
+@propertyWrapper public struct iComponentsSDK_Atomic<Value> {
+  public init(wrappedValue value: Value)
+  public var wrappedValue: Value {
+    get
+    set
+  }
+}
+extension UIKit.UIApplication {
+  @_Concurrency.MainActor(unsafe) public static let iComponentsSDK_window: UIKit.UIWindow?
+  @_Concurrency.MainActor(unsafe) public class func iComponentsSDK_topViewController(controller: UIKit.UIViewController? = UIApplication.iComponentsSDK_window?.rootViewController) -> UIKit.UIViewController?
+}

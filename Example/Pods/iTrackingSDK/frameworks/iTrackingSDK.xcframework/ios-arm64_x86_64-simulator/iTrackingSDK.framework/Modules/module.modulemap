@@ -1,0 +1,6 @@
+framework module iTrackingSDK {
+  umbrella header "iTrackingSDK.h"
+  export *
+
+  module * { export * }
+}

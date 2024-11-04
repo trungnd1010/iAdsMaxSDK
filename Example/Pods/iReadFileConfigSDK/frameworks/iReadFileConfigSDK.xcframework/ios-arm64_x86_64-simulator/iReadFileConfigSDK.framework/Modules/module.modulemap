@@ -1,0 +1,6 @@
+framework module iReadFileConfigSDK {
+  umbrella header "iReadFileConfigSDK.h"
+  export *
+
+  module * { export * }
+}

@@ -1,0 +1,199 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios17.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name iAdsCoreSDK
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_exported import iAdsCoreSDK
+import iTrackingSDK
+public protocol iAdsCoreSDK_RewardedProtocol {
+  var isLoading: Swift.Bool { get set }
+  var isHasAds: Swift.Bool { get set }
+  func loadAds(adsId: Swift.String, completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  func showAds(vc: UIKit.UIViewController, placement: Swift.String, priority: Swift.Int, completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  static func make() -> any iAdsCoreSDK.iAdsCoreSDK_RewardedProtocol
+}
+public protocol iAdsCoreSDK_OpenProtocol {
+  var isLoading: Swift.Bool { get set }
+  var isHasAds: Swift.Bool { get set }
+  func loadAds(adsId: Swift.String, completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  func showAds(vc: UIKit.UIViewController, placement: Swift.String, priority: Swift.Int, completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  static func make() -> any iAdsCoreSDK.iAdsCoreSDK_OpenProtocol
+}
+public protocol iAdsCoreSDK_IntertitialProtocol {
+  var isLoading: Swift.Bool { get set }
+  var isHasAds: Swift.Bool { get set }
+  func loadAds(adsId: Swift.String, completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  func showAds(vc: UIKit.UIViewController, placement: Swift.String, priority: Swift.Int, completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  static func make() -> any iAdsCoreSDK.iAdsCoreSDK_IntertitialProtocol
+}
+public protocol iAdsCoreSDK_BannerProtocol {
+  var isLoading: Swift.Bool { get set }
+  var isHasAds: Swift.Bool { get set }
+  func loadAds(vc: UIKit.UIViewController, adsId: Swift.String, completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  func showAds(containerView: UIKit.UIView, placement: Swift.String, priority: Swift.Int, completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  static func make() -> any iAdsCoreSDK.iAdsCoreSDK_BannerProtocol
+}
+public protocol iAdsCoreSDK_NativeProtocol {
+  var isLoading: Swift.Bool { get set }
+  var isHasAds: Swift.Bool { get set }
+  func loadAds(vc: UIKit.UIViewController, adsId: Swift.String, completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  func showAds(containerView: UIKit.UIView, nativeAdmobView: UIKit.UIView?, nativeMaxView: UIKit.UIView?, placement: Swift.String, priority: Swift.Int, completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  static func make() -> any iAdsCoreSDK.iAdsCoreSDK_NativeProtocol
+}
+public class iAdsCoreSDK_AdTrack {
+  public init()
+  public enum AdTrackBool : Swift.String {
+    case yes
+    case no
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum AdTrackStatus : Swift.String {
+    case loaded
+    case load_failed
+    case pre_show
+    case showed
+    case show_failed
+    case impression
+    case clicked
+    case rewarded
+    case closed
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum AdTrackAction : Swift.String {
+    case load
+    case show
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum AdTrackScriptName : Swift.String {
+    case load_xx
+    case show_xx
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum AdTrackAdFormat : Swift.String {
+    case Banner
+    case Native
+    case Interstitial
+    case Rewarded_Video
+    case Open_Ad
+    case Audio
+    case Other
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum AdTrackSubAdFormat : Swift.String {
+    case reward
+    case open
+    case inter
+    case widget
+    case audio
+    case banner
+    case native
+    case native_banner
+    case rewarded_inter
+    case banner_inline
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public func tracking(placement: Swift.String, ad_status: iAdsCoreSDK.iAdsCoreSDK_AdTrack.AdTrackStatus, ad_unit_name: Swift.String, ad_action: iAdsCoreSDK.iAdsCoreSDK_AdTrack.AdTrackAction, script_name: iAdsCoreSDK.iAdsCoreSDK_AdTrack.AdTrackScriptName, ad_network: Swift.String, ad_format: iAdsCoreSDK.iAdsCoreSDK_AdTrack.AdTrackAdFormat, sub_ad_format: iAdsCoreSDK.iAdsCoreSDK_AdTrack.AdTrackSubAdFormat, error_code: Swift.String, message: Swift.String, time: Swift.String, priority: Swift.String, recall_ad: iAdsCoreSDK.iAdsCoreSDK_AdTrack.AdTrackBool)
+  @objc deinit
+}
+public class iAdsCoreSDK_PaidAd {
+  public init()
+  public enum PaidAdPlatform : Swift.String {
+    case ADMOB
+    case ADMAX
+    case ADGAM
+    case FAIRBID
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum PaidAdAdFormat : Swift.String {
+    case Banner
+    case Native
+    case Interstitial
+    case Rewarded_Video
+    case Open_Ad
+    case Audio
+    case Other
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum PaidAdSubAdFormat : Swift.String {
+    case reward
+    case open
+    case inter
+    case widget
+    case audio
+    case banner
+    case native
+    case native_banner
+    case rewarded_inter
+    case banner_inline
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public func tracking(ad_platform: iAdsCoreSDK.iAdsCoreSDK_PaidAd.PaidAdPlatform, currency: Swift.String, value: Swift.Double, ad_unit_name: Swift.String, ad_network: Swift.String, ad_format: iAdsCoreSDK.iAdsCoreSDK_PaidAd.PaidAdAdFormat, sub_ad_format: iAdsCoreSDK.iAdsCoreSDK_PaidAd.PaidAdSubAdFormat, placement: Swift.String, ad_id: Swift.String)
+  @objc deinit
+}
+extension iAdsCoreSDK.iAdsCoreSDK_AdTrack.AdTrackBool : Swift.Equatable {}
+extension iAdsCoreSDK.iAdsCoreSDK_AdTrack.AdTrackBool : Swift.Hashable {}
+extension iAdsCoreSDK.iAdsCoreSDK_AdTrack.AdTrackBool : Swift.RawRepresentable {}
+extension iAdsCoreSDK.iAdsCoreSDK_AdTrack.AdTrackStatus : Swift.Equatable {}
+extension iAdsCoreSDK.iAdsCoreSDK_AdTrack.AdTrackStatus : Swift.Hashable {}
+extension iAdsCoreSDK.iAdsCoreSDK_AdTrack.AdTrackStatus : Swift.RawRepresentable {}
+extension iAdsCoreSDK.iAdsCoreSDK_AdTrack.AdTrackAction : Swift.Equatable {}
+extension iAdsCoreSDK.iAdsCoreSDK_AdTrack.AdTrackAction : Swift.Hashable {}
+extension iAdsCoreSDK.iAdsCoreSDK_AdTrack.AdTrackAction : Swift.RawRepresentable {}
+extension iAdsCoreSDK.iAdsCoreSDK_AdTrack.AdTrackScriptName : Swift.Equatable {}
+extension iAdsCoreSDK.iAdsCoreSDK_AdTrack.AdTrackScriptName : Swift.Hashable {}
+extension iAdsCoreSDK.iAdsCoreSDK_AdTrack.AdTrackScriptName : Swift.RawRepresentable {}
+extension iAdsCoreSDK.iAdsCoreSDK_AdTrack.AdTrackAdFormat : Swift.Equatable {}
+extension iAdsCoreSDK.iAdsCoreSDK_AdTrack.AdTrackAdFormat : Swift.Hashable {}
+extension iAdsCoreSDK.iAdsCoreSDK_AdTrack.AdTrackAdFormat : Swift.RawRepresentable {}
+extension iAdsCoreSDK.iAdsCoreSDK_AdTrack.AdTrackSubAdFormat : Swift.Equatable {}
+extension iAdsCoreSDK.iAdsCoreSDK_AdTrack.AdTrackSubAdFormat : Swift.Hashable {}
+extension iAdsCoreSDK.iAdsCoreSDK_AdTrack.AdTrackSubAdFormat : Swift.RawRepresentable {}
+extension iAdsCoreSDK.iAdsCoreSDK_PaidAd.PaidAdPlatform : Swift.Equatable {}
+extension iAdsCoreSDK.iAdsCoreSDK_PaidAd.PaidAdPlatform : Swift.Hashable {}
+extension iAdsCoreSDK.iAdsCoreSDK_PaidAd.PaidAdPlatform : Swift.RawRepresentable {}
+extension iAdsCoreSDK.iAdsCoreSDK_PaidAd.PaidAdAdFormat : Swift.Equatable {}
+extension iAdsCoreSDK.iAdsCoreSDK_PaidAd.PaidAdAdFormat : Swift.Hashable {}
+extension iAdsCoreSDK.iAdsCoreSDK_PaidAd.PaidAdAdFormat : Swift.RawRepresentable {}
+extension iAdsCoreSDK.iAdsCoreSDK_PaidAd.PaidAdSubAdFormat : Swift.Equatable {}
+extension iAdsCoreSDK.iAdsCoreSDK_PaidAd.PaidAdSubAdFormat : Swift.Hashable {}
+extension iAdsCoreSDK.iAdsCoreSDK_PaidAd.PaidAdSubAdFormat : Swift.RawRepresentable {}

@@ -1,0 +1,6 @@
+use_frameworks!
+target 'iAdsMaxSDK_Tests' do
+  pod 'iAdsMaxSDK', :path => '../'
+  
+  
+end
