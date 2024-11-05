@@ -17,9 +17,6 @@ public class iAdsMaxSDK_BannerManager: NSObject, iAdsCoreSDK_BannerProtocol {
     var completionLoad: ((Result<Void, Error>) -> Void)?
     
     @iComponentsSDK_Atomic
-    var completionShow: ((Result<Void, Error>) -> Void)?
-    
-    @iComponentsSDK_Atomic
     public var isLoading: Bool = false
     
     public var isHasAds: Bool = false
@@ -72,7 +69,6 @@ public class iAdsMaxSDK_BannerManager: NSObject, iAdsCoreSDK_BannerProtocol {
         self.isHasAds = false
         self.priority = "\(priority)"
         self.placement = placement
-        self.completionShow = completion
         
         guard let bannerAd = bannerAd else {
             completion(.failure(iAdsMaxSDK_Error.noAdsToShow))
@@ -80,7 +76,27 @@ public class iAdsMaxSDK_BannerManager: NSObject, iAdsCoreSDK_BannerProtocol {
         }
         
         containerView.iComponentsSDK_removeAllSubviews()
-        containerView.iComponentsSDK_addSubView(subView: bannerAd)
+        containerView.addSubview(bannerAd)
+//        containerView.iComponentsSDK_addSubView(subView: bannerAd)
+        bannerAd.translatesAutoresizingMaskIntoConstraints = false
+        bannerAd.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
+        bannerAd.centerXAnchor.constraint(equalTo: containerView.centerXAnchor).isActive = true
+        
+        iAdsCoreSDK_AdTrack().tracking(placement: "",
+                                       ad_status: .showed,
+                                       ad_unit_name: adsId,
+                                       ad_action: .show,
+                                       script_name: .show_xx,
+                                       ad_network: adNetwork,
+                                       ad_format: .Banner,
+                                       sub_ad_format: .banner,
+                                       error_code: "",
+                                       message: "",
+                                       time: "",
+                                       priority: "",
+                                       recall_ad: .no)
+        
+        completion(.success(()))
     }
 }
 
@@ -94,6 +110,9 @@ extension iAdsMaxSDK_BannerManager: MAAdViewAdDelegate {
     }
     
     public func didLoad(_ ad: MAAd) {
+        if completionLoad == nil {
+            return
+        }
         isHasAds = true
         isLoading = false
         iAdsCoreSDK_AdTrack().tracking(placement: "",
@@ -134,21 +153,7 @@ extension iAdsMaxSDK_BannerManager: MAAdViewAdDelegate {
     }
     
     public func didDisplay(_ ad: MAAd) {
-        iAdsCoreSDK_AdTrack().tracking(placement: "",
-                                       ad_status: .showed,
-                                       ad_unit_name: adsId,
-                                       ad_action: .show,
-                                       script_name: .show_xx,
-                                       ad_network: adNetwork,
-                                       ad_format: .Banner,
-                                       sub_ad_format: .banner,
-                                       error_code: "",
-                                       message: "",
-                                       time: "",
-                                       priority: "",
-                                       recall_ad: .no)
-        completionShow?(.success(()))
-        completionShow = nil
+    
     }
     
     public func didHide(_ ad: MAAd) {
@@ -199,8 +204,6 @@ extension iAdsMaxSDK_BannerManager: MAAdViewAdDelegate {
                                        time: "",
                                        priority: "",
                                        recall_ad: .no)
-        completionShow?(.failure(NSError.init(domain: error.message, code: error.code.rawValue)))
-        completionShow = nil
     }
 }
 
