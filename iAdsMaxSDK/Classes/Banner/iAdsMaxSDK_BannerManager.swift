@@ -49,19 +49,22 @@ public class iAdsMaxSDK_BannerManager: NSObject, iAdsCoreSDK_BannerProtocol {
         self.completionLoad = completion
         self.isLoading = true
         self.adsId = adsId
-        if isMrec ?? false {
-            bannerAd = MAAdView(adUnitIdentifier: adsId, adFormat: .mrec)
-        } else {
-            bannerAd = MAAdView(adUnitIdentifier: adsId, adFormat: (UIDevice.current.userInterfaceIdiom == .pad) ? .leader : .banner)
+        DispatchQueue.main.async {
+            if isMrec ?? false {
+                self.bannerAd = MAAdView(adUnitIdentifier: adsId, adFormat: .mrec)
+            } else {
+                self.bannerAd = MAAdView(adUnitIdentifier: adsId, adFormat: (UIDevice.current.userInterfaceIdiom == .pad) ? .leader : .banner)
+            }
+            
+            
+            self.bannerAd?.delegate = self
+            self.bannerAd?.revenueDelegate = self
+            
+            self.bannerAd?.loadAd()
         }
-        
-        
-        bannerAd?.delegate = self
-        bannerAd?.revenueDelegate = self
-        
-        bannerAd?.loadAd()
     }
     
+    @MainActor
     public func showAds(containerView: UIView,
                         placement    : String,
                         priority     : Int,
@@ -107,6 +110,7 @@ extension iAdsMaxSDK_BannerManager: MAAdViewAdDelegate {
                                        priority: "",
                                        recall_ad: .no)
         completionLoad?(.success(()))
+        completionLoad = nil
     }
     
     public func didFailToLoadAd(forAdUnitIdentifier adUnitIdentifier: String, withError error: MAError) {
@@ -126,10 +130,25 @@ extension iAdsMaxSDK_BannerManager: MAAdViewAdDelegate {
                                        priority: "",
                                        recall_ad: .no)
         completionLoad?(.failure(NSError.init(domain: error.message, code: error.code.rawValue)))
+        completionLoad = nil
     }
     
     public func didDisplay(_ ad: MAAd) {
-        
+        iAdsCoreSDK_AdTrack().tracking(placement: "",
+                                       ad_status: .showed,
+                                       ad_unit_name: adsId,
+                                       ad_action: .show,
+                                       script_name: .show_xx,
+                                       ad_network: adNetwork,
+                                       ad_format: .Banner,
+                                       sub_ad_format: .banner,
+                                       error_code: "",
+                                       message: "",
+                                       time: "",
+                                       priority: "",
+                                       recall_ad: .no)
+        completionShow?(.success(()))
+        completionShow = nil
     }
     
     public func didHide(_ ad: MAAd) {
@@ -181,12 +200,12 @@ extension iAdsMaxSDK_BannerManager: MAAdViewAdDelegate {
                                        priority: "",
                                        recall_ad: .no)
         completionShow?(.failure(NSError.init(domain: error.message, code: error.code.rawValue)))
+        completionShow = nil
     }
 }
 
 extension iAdsMaxSDK_BannerManager: MAAdRevenueDelegate  {
     public func didPayRevenue(for ad: MAAd) {
-        completionShow?(.success(()))
         let revenue = ad.revenue
         self.adNetwork = ad.networkName
         
@@ -202,20 +221,6 @@ extension iAdsMaxSDK_BannerManager: MAAdRevenueDelegate  {
         
         iAdsCoreSDK_AdTrack().tracking(placement: "",
                                        ad_status: .impression,
-                                       ad_unit_name: adsId,
-                                       ad_action: .show,
-                                       script_name: .show_xx,
-                                       ad_network: adNetwork,
-                                       ad_format: .Banner,
-                                       sub_ad_format: .banner,
-                                       error_code: "",
-                                       message: "",
-                                       time: "",
-                                       priority: "",
-                                       recall_ad: .no)
-        
-        iAdsCoreSDK_AdTrack().tracking(placement: "",
-                                       ad_status: .showed,
                                        ad_unit_name: adsId,
                                        ad_action: .show,
                                        script_name: .show_xx,
