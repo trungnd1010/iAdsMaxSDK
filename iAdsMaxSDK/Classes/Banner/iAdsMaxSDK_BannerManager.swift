@@ -26,6 +26,9 @@ public class iAdsMaxSDK_BannerManager: NSObject, iAdsCoreSDK_BannerProtocol {
     private var adNetwork: String = "AdMax"
     private var adsId: String = ""
     
+    private var sub_ad_format = iAdsCoreSDK_AdTrack.AdTrackSubAdFormat.banner
+    private var paid_ad_format = iAdsCoreSDK_PaidAd.PaidAdSubAdFormat.banner
+    
     private var bannerAd: MAAdView?
     
     public static
@@ -46,6 +49,17 @@ public class iAdsMaxSDK_BannerManager: NSObject, iAdsCoreSDK_BannerProtocol {
         self.completionLoad = completion
         self.isLoading = true
         self.adsId = adsId
+        
+        if (isMrec ?? false) {
+            sub_ad_format = .mrec
+            paid_ad_format = .mrec
+        }
+        
+        if (collapsible ?? "") != "" {
+            sub_ad_format = .banner_collapsible
+            paid_ad_format = .banner_collapsible
+        }
+        
         DispatchQueue.main.async {
             if isMrec ?? false {
                 self.bannerAd = MAAdView(adUnitIdentifier: adsId, adFormat: .mrec)
@@ -89,7 +103,7 @@ public class iAdsMaxSDK_BannerManager: NSObject, iAdsCoreSDK_BannerProtocol {
                                        script_name: .show_xx,
                                        ad_network: adNetwork,
                                        ad_format: .Banner,
-                                       sub_ad_format: .banner,
+                                       sub_ad_format: sub_ad_format,
                                        error_code: "",
                                        message: "",
                                        time: "",
@@ -122,7 +136,7 @@ extension iAdsMaxSDK_BannerManager: MAAdViewAdDelegate {
                                        script_name: .load_xx,
                                        ad_network: adNetwork,
                                        ad_format: .Banner,
-                                       sub_ad_format: .banner,
+                                       sub_ad_format: sub_ad_format,
                                        error_code: "",
                                        message: "",
                                        time: "",
@@ -142,7 +156,7 @@ extension iAdsMaxSDK_BannerManager: MAAdViewAdDelegate {
                                        script_name: .load_xx,
                                        ad_network: adNetwork,
                                        ad_format: .Banner,
-                                       sub_ad_format: .banner,
+                                       sub_ad_format: sub_ad_format,
                                        error_code: "",
                                        message: "",
                                        time: "",
@@ -164,7 +178,7 @@ extension iAdsMaxSDK_BannerManager: MAAdViewAdDelegate {
                                        script_name: .show_xx,
                                        ad_network: adNetwork,
                                        ad_format: .Banner,
-                                       sub_ad_format: .banner,
+                                       sub_ad_format: sub_ad_format,
                                        error_code: "",
                                        message: "",
                                        time: "",
@@ -180,7 +194,7 @@ extension iAdsMaxSDK_BannerManager: MAAdViewAdDelegate {
                                        script_name: .show_xx,
                                        ad_network: adNetwork,
                                        ad_format: .Banner,
-                                       sub_ad_format: .banner,
+                                       sub_ad_format: sub_ad_format,
                                        error_code: "",
                                        message: "",
                                        time: "",
@@ -198,7 +212,7 @@ extension iAdsMaxSDK_BannerManager: MAAdViewAdDelegate {
                                        script_name: .load_xx,
                                        ad_network: adNetwork,
                                        ad_format: .Banner,
-                                       sub_ad_format: .banner,
+                                       sub_ad_format: sub_ad_format,
                                        error_code: "",
                                        message: "",
                                        time: "",
@@ -218,7 +232,7 @@ extension iAdsMaxSDK_BannerManager: MAAdRevenueDelegate  {
                                       ad_unit_name: adsId,
                                       ad_network: adNetwork,
                                       ad_format: .Banner,
-                                      sub_ad_format: .banner,
+                                      sub_ad_format: paid_ad_format,
                                       placement: placement,
                                       ad_id: "")
         
@@ -229,7 +243,7 @@ extension iAdsMaxSDK_BannerManager: MAAdRevenueDelegate  {
                                        script_name: .show_xx,
                                        ad_network: adNetwork,
                                        ad_format: .Banner,
-                                       sub_ad_format: .banner,
+                                       sub_ad_format: sub_ad_format,
                                        error_code: "",
                                        message: "",
                                        time: "",
