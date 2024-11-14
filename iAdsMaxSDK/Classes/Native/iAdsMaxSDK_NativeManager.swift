@@ -105,7 +105,7 @@ extension iAdsMaxSDK_NativeManager: MANativeAdDelegate {
         isHasAds = true
         isLoading = false
         nativeAd = ad
-        iAdsCoreSDK_AdTrack().tracking(placement: "",
+        iAdsCoreSDK_AdTrack().tracking(placement: self.placement,
                                        ad_status: .loaded,
                                        ad_unit_name: adsId,
                                        ad_action: .load,
@@ -122,7 +122,7 @@ extension iAdsMaxSDK_NativeManager: MANativeAdDelegate {
     }
     
     public func didClickNativeAd(_ ad: MAAd) {
-        iAdsCoreSDK_AdTrack().tracking(placement: "",
+        iAdsCoreSDK_AdTrack().tracking(placement: self.placement,
                                        ad_status: .clicked,
                                        ad_unit_name: adsId,
                                        ad_action: .show,
@@ -140,7 +140,7 @@ extension iAdsMaxSDK_NativeManager: MANativeAdDelegate {
     public func didFailToLoadNativeAd(forAdUnitIdentifier adUnitIdentifier: String, withError error: MAError) {
         isHasAds = false
         isLoading = false
-        iAdsCoreSDK_AdTrack().tracking(placement: "",
+        iAdsCoreSDK_AdTrack().tracking(placement: self.placement,
                                        ad_status: .load_failed,
                                        ad_unit_name: adsId,
                                        ad_action: .load,
@@ -177,7 +177,7 @@ extension iAdsMaxSDK_NativeManager: MAAdRevenueDelegate  {
                                       placement: placement,
                                       ad_id: "")
         
-        iAdsCoreSDK_AdTrack().tracking(placement: "",
+        iAdsCoreSDK_AdTrack().tracking(placement: self.placement,
                                        ad_status: .impression,
                                        ad_unit_name: adsId,
                                        ad_action: .show,
@@ -191,7 +191,7 @@ extension iAdsMaxSDK_NativeManager: MAAdRevenueDelegate  {
                                        priority: "",
                                        recall_ad: .no)
         
-        iAdsCoreSDK_AdTrack().tracking(placement: "",
+        iAdsCoreSDK_AdTrack().tracking(placement: self.placement,
                                        ad_status: .showed,
                                        ad_unit_name: adsId,
                                        ad_action: .show,

@@ -81,7 +81,7 @@ extension iAdsMaxSDK_RewardedManager: MARewardedAdDelegate {
         isLoading = false
         isHasAds = true
         
-        iAdsCoreSDK_AdTrack().tracking(placement: "",
+        iAdsCoreSDK_AdTrack().tracking(placement: self.placement,
                                        ad_status: .loaded,
                                        ad_unit_name: adsId,
                                        ad_action: .load,
@@ -100,7 +100,7 @@ extension iAdsMaxSDK_RewardedManager: MARewardedAdDelegate {
     
     public func didFailToLoadAd(forAdUnitIdentifier adUnitIdentifier: String, withError error: MAError) {
         isLoading = false
-        iAdsCoreSDK_AdTrack().tracking(placement: "",
+        iAdsCoreSDK_AdTrack().tracking(placement: self.placement,
                                        ad_status: .load_failed,
                                        ad_unit_name: adsId,
                                        ad_action: .load,

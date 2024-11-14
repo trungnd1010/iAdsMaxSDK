@@ -96,7 +96,7 @@ public class iAdsMaxSDK_BannerManager: NSObject, iAdsCoreSDK_BannerProtocol {
         bannerAd.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
         bannerAd.centerXAnchor.constraint(equalTo: containerView.centerXAnchor).isActive = true
         
-        iAdsCoreSDK_AdTrack().tracking(placement: "",
+        iAdsCoreSDK_AdTrack().tracking(placement: self.placement,
                                        ad_status: .showed,
                                        ad_unit_name: adsId,
                                        ad_action: .show,
@@ -129,7 +129,7 @@ extension iAdsMaxSDK_BannerManager: MAAdViewAdDelegate {
         }
         isHasAds = true
         isLoading = false
-        iAdsCoreSDK_AdTrack().tracking(placement: "",
+        iAdsCoreSDK_AdTrack().tracking(placement: self.placement,
                                        ad_status: .loaded,
                                        ad_unit_name: adsId,
                                        ad_action: .load,
@@ -149,7 +149,7 @@ extension iAdsMaxSDK_BannerManager: MAAdViewAdDelegate {
     public func didFailToLoadAd(forAdUnitIdentifier adUnitIdentifier: String, withError error: MAError) {
         isHasAds = false
         isLoading = false
-        iAdsCoreSDK_AdTrack().tracking(placement: "",
+        iAdsCoreSDK_AdTrack().tracking(placement: self.placement,
                                        ad_status: .load_failed,
                                        ad_unit_name: adsId,
                                        ad_action: .load,
@@ -171,7 +171,7 @@ extension iAdsMaxSDK_BannerManager: MAAdViewAdDelegate {
     }
     
     public func didHide(_ ad: MAAd) {
-        iAdsCoreSDK_AdTrack().tracking(placement: "",
+        iAdsCoreSDK_AdTrack().tracking(placement: self.placement,
                                        ad_status: .closed,
                                        ad_unit_name: adsId,
                                        ad_action: .show,
@@ -187,7 +187,7 @@ extension iAdsMaxSDK_BannerManager: MAAdViewAdDelegate {
     }
     
     public func didClick(_ ad: MAAd) {
-        iAdsCoreSDK_AdTrack().tracking(placement: "",
+        iAdsCoreSDK_AdTrack().tracking(placement: self.placement,
                                        ad_status: .clicked,
                                        ad_unit_name: adsId,
                                        ad_action: .show,
@@ -205,7 +205,7 @@ extension iAdsMaxSDK_BannerManager: MAAdViewAdDelegate {
     public func didFail(toDisplay ad: MAAd, withError error: MAError) {
         isHasAds = false
         isLoading = false
-        iAdsCoreSDK_AdTrack().tracking(placement: "",
+        iAdsCoreSDK_AdTrack().tracking(placement: self.placement,
                                        ad_status: .load_failed,
                                        ad_unit_name: adsId,
                                        ad_action: .load,
@@ -236,7 +236,7 @@ extension iAdsMaxSDK_BannerManager: MAAdRevenueDelegate  {
                                       placement: placement,
                                       ad_id: "")
         
-        iAdsCoreSDK_AdTrack().tracking(placement: "",
+        iAdsCoreSDK_AdTrack().tracking(placement: self.placement,
                                        ad_status: .impression,
                                        ad_unit_name: adsId,
                                        ad_action: .show,
