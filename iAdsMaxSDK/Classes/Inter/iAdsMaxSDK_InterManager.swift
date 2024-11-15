@@ -31,6 +31,8 @@ public class iAdsMaxSDK_InterManager: NSObject, iAdsCoreSDK_IntertitialProtocol 
     private var adNetwork: String = "AdMax"
     private var adsId: String = ""
     
+    private var dateStartLoad: Date = Date()
+    
     public static func make() -> iAdsCoreSDK_IntertitialProtocol {
         return iAdsMaxSDK_InterManager()
     }
@@ -40,6 +42,7 @@ public class iAdsMaxSDK_InterManager: NSObject, iAdsCoreSDK_IntertitialProtocol 
             completion(.failure(iAdsMaxSDK_Error.adsIdIsLoading))
             return
         }
+        self.dateStartLoad = Date()
         self.isLoading = true
         self.adsId = adsId
         self.completionLoad = completion
@@ -83,8 +86,8 @@ extension iAdsMaxSDK_InterManager: MAAdViewAdDelegate {
                                        sub_ad_format: .inter,
                                        error_code: "",
                                        message: "",
-                                       time: "",
-                                       priority: "",
+                                       time: "\(Date().timeIntervalSince1970 - dateStartLoad.timeIntervalSince1970)",
+                                       priority: self.priority,
                                        recall_ad: .no)
         
         completionLoad?(.success(()))
@@ -102,8 +105,8 @@ extension iAdsMaxSDK_InterManager: MAAdViewAdDelegate {
                                        sub_ad_format: .inter,
                                        error_code: "\(error.code.rawValue)",
                                        message: error.message,
-                                       time: "",
-                                       priority: "",
+                                       time: "\(Date().timeIntervalSince1970 - dateStartLoad.timeIntervalSince1970)",
+                                       priority: self.priority,
                                        recall_ad: .no)
         completionLoad?(.failure(NSError.init(domain: error.message, code: error.code.rawValue)))
     }

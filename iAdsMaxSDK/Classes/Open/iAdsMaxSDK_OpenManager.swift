@@ -31,6 +31,8 @@ public class iAdsMaxSDK_OpenManager: NSObject, iAdsCoreSDK_OpenProtocol {
     private var adNetwork: String = "AdMax"
     private var adsId: String = ""
     
+    private var dateStartLoad: Date = Date()
+    
     public static func make() -> iAdsCoreSDK_OpenProtocol {
         return iAdsMaxSDK_OpenManager()
     }
@@ -40,6 +42,7 @@ public class iAdsMaxSDK_OpenManager: NSObject, iAdsCoreSDK_OpenProtocol {
             completion(.failure(iAdsMaxSDK_Error.adsIdIsLoading))
             return
         }
+        self.dateStartLoad = Date()
         self.isLoading = true
         self.adsId = adsId
         self.completionLoad = completion
@@ -83,7 +86,7 @@ extension iAdsMaxSDK_OpenManager: MAAdViewAdDelegate {
                                        sub_ad_format: .open,
                                        error_code: "",
                                        message: "",
-                                       time: "",
+                                       time: "\(Date().timeIntervalSince1970 - dateStartLoad.timeIntervalSince1970)",
                                        priority: "",
                                        recall_ad: .no)
         
@@ -102,7 +105,7 @@ extension iAdsMaxSDK_OpenManager: MAAdViewAdDelegate {
                                        sub_ad_format: .open,
                                        error_code: "\(error.code.rawValue)",
                                        message: error.message,
-                                       time: "",
+                                       time: "\(Date().timeIntervalSince1970 - dateStartLoad.timeIntervalSince1970)",
                                        priority: "",
                                        recall_ad: .no)
         completionLoad?(.failure(NSError.init(domain: error.message, code: error.code.rawValue)))

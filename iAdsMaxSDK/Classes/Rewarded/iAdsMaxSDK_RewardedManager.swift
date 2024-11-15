@@ -33,6 +33,8 @@ public class iAdsMaxSDK_RewardedManager: NSObject, iAdsCoreSDK_RewardedProtocol 
     private var adNetwork: String = "AdMax"
     private var adsId: String = ""
     
+    private var dateStartLoad: Date = Date()
+    
     public static func make() -> iAdsCoreSDK_RewardedProtocol {
         return iAdsMaxSDK_RewardedManager()
     }
@@ -42,6 +44,7 @@ public class iAdsMaxSDK_RewardedManager: NSObject, iAdsCoreSDK_RewardedProtocol 
             completion(.failure(iAdsMaxSDK_Error.adsIdIsLoading))
             return
         }
+        self.dateStartLoad = Date()
         self.isLoading = true
         self.adsId = adsId
         self.completionLoad = completion
@@ -91,7 +94,7 @@ extension iAdsMaxSDK_RewardedManager: MARewardedAdDelegate {
                                        sub_ad_format: .open,
                                        error_code: "",
                                        message: "",
-                                       time: "",
+                                       time: "\(Date().timeIntervalSince1970 - dateStartLoad.timeIntervalSince1970)",
                                        priority: "",
                                        recall_ad: .no)
         
@@ -110,7 +113,7 @@ extension iAdsMaxSDK_RewardedManager: MARewardedAdDelegate {
                                        sub_ad_format: .open,
                                        error_code: "\(error.code.rawValue)",
                                        message: error.message,
-                                       time: "",
+                                       time: "\(Date().timeIntervalSince1970 - dateStartLoad.timeIntervalSince1970)",
                                        priority: "",
                                        recall_ad: .no)
         completionLoad?(.failure(NSError.init(domain: error.message, code: error.code.rawValue)))

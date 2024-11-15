@@ -35,6 +35,8 @@ public class iAdsMaxSDK_NativeManager: NSObject, iAdsCoreSDK_NativeProtocol {
     
     private var nativeAd: MAAd?
     
+    private var dateStartLoad: Date = Date()
+    
     public static
     func make() -> iAdsCoreSDK_NativeProtocol {
         return iAdsMaxSDK_NativeManager()
@@ -48,6 +50,7 @@ public class iAdsMaxSDK_NativeManager: NSObject, iAdsCoreSDK_NativeProtocol {
             completion(.failure(iAdsMaxSDK_Error.adsIdIsLoading))
             return
         }
+        self.dateStartLoad = Date()
         self.completionLoad = completion
         self.isLoading = true
         self.adsId = adsId
@@ -115,7 +118,7 @@ extension iAdsMaxSDK_NativeManager: MANativeAdDelegate {
                                        sub_ad_format: .native,
                                        error_code: "",
                                        message: "",
-                                       time: "",
+                                       time: "\(Date().timeIntervalSince1970 - dateStartLoad.timeIntervalSince1970)",
                                        priority: "",
                                        recall_ad: .no)
         completionLoad?(.success(()))
@@ -148,9 +151,9 @@ extension iAdsMaxSDK_NativeManager: MANativeAdDelegate {
                                        ad_network: adNetwork,
                                        ad_format: .Native,
                                        sub_ad_format: .native,
-                                       error_code: "",
-                                       message: "",
-                                       time: "",
+                                       error_code: "\(error.code.rawValue)",
+                                       message: error.message,
+                                       time: "\(Date().timeIntervalSince1970 - dateStartLoad.timeIntervalSince1970)",
                                        priority: "",
                                        recall_ad: .no)
         completionLoad?(.failure(NSError.init(domain: error.message, code: error.code.rawValue)))

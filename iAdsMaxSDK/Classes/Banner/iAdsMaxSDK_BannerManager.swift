@@ -30,6 +30,7 @@ public class iAdsMaxSDK_BannerManager: NSObject, iAdsCoreSDK_BannerProtocol {
     private var paid_ad_format = iAdsCoreSDK_PaidAd.PaidAdSubAdFormat.banner
     
     private var bannerAd: MAAdView?
+    private var dateStartLoad: Date = Date()
     
     public static
     func make() -> iAdsCoreSDK_BannerProtocol {
@@ -46,6 +47,7 @@ public class iAdsMaxSDK_BannerManager: NSObject, iAdsCoreSDK_BannerProtocol {
             completion(.failure(iAdsMaxSDK_Error.adsIdIsLoading))
             return
         }
+        self.dateStartLoad = Date()
         self.completionLoad = completion
         self.isLoading = true
         self.adsId = adsId
@@ -139,7 +141,7 @@ extension iAdsMaxSDK_BannerManager: MAAdViewAdDelegate {
                                        sub_ad_format: sub_ad_format,
                                        error_code: "",
                                        message: "",
-                                       time: "",
+                                       time: "\(Date().timeIntervalSince1970 - dateStartLoad.timeIntervalSince1970)",
                                        priority: "",
                                        recall_ad: .no)
         completionLoad?(.success(()))
@@ -157,9 +159,9 @@ extension iAdsMaxSDK_BannerManager: MAAdViewAdDelegate {
                                        ad_network: adNetwork,
                                        ad_format: .Banner,
                                        sub_ad_format: sub_ad_format,
-                                       error_code: "",
-                                       message: "",
-                                       time: "",
+                                       error_code: "\(error.code.rawValue)",
+                                       message: error.message,
+                                       time: "\(Date().timeIntervalSince1970 - dateStartLoad.timeIntervalSince1970)",
                                        priority: "",
                                        recall_ad: .no)
         completionLoad?(.failure(NSError.init(domain: error.message, code: error.code.rawValue)))
