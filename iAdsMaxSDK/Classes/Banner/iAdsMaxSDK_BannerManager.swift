@@ -92,7 +92,6 @@ public class iAdsMaxSDK_BannerManager: NSObject, iAdsCoreSDK_BannerProtocol {
         }
         
         containerView.iComponentsSDK_removeAllSubviews()
-//        containerView.addSubview(bannerAd)
         containerView.iComponentsSDK_addSubView(subView: bannerAd)
         
         iAdsCoreSDK_AdTrack().tracking(placement: self.placement,
