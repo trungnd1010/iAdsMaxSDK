@@ -92,11 +92,8 @@ public class iAdsMaxSDK_BannerManager: NSObject, iAdsCoreSDK_BannerProtocol {
         }
         
         containerView.iComponentsSDK_removeAllSubviews()
-        containerView.addSubview(bannerAd)
-//        containerView.iComponentsSDK_addSubView(subView: bannerAd)
-        bannerAd.translatesAutoresizingMaskIntoConstraints = false
-        bannerAd.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
-        bannerAd.centerXAnchor.constraint(equalTo: containerView.centerXAnchor).isActive = true
+//        containerView.addSubview(bannerAd)
+        containerView.iComponentsSDK_addSubView(subView: bannerAd)
         
         iAdsCoreSDK_AdTrack().tracking(placement: self.placement,
                                        ad_status: .showed,
