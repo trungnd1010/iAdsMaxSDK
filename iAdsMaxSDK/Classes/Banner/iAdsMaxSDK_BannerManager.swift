@@ -32,6 +32,8 @@ public class iAdsMaxSDK_BannerManager: NSObject, iAdsCoreSDK_BannerProtocol {
     private var bannerAd: MAAdView?
     private var dateStartLoad: Date = Date()
     
+    private var isMrec: Bool?
+    
     public static
     func make() -> iAdsCoreSDK_BannerProtocol {
         return iAdsMaxSDK_BannerManager()
@@ -51,6 +53,7 @@ public class iAdsMaxSDK_BannerManager: NSObject, iAdsCoreSDK_BannerProtocol {
         self.completionLoad = completion
         self.isLoading = true
         self.adsId = adsId
+        self.isMrec = isMrec
         
         if (isMrec ?? false) {
             sub_ad_format = .mrec
@@ -64,11 +67,15 @@ public class iAdsMaxSDK_BannerManager: NSObject, iAdsCoreSDK_BannerProtocol {
         
         DispatchQueue.main.async {
             if isMrec ?? false {
+                let height: CGFloat = 250
+                let width: CGFloat = 300
                 self.bannerAd = MAAdView(adUnitIdentifier: adsId, adFormat: .mrec)
+                self.bannerAd?.frame = CGRect(x: 0, y: 0, width: width, height: height)
             } else {
+                let height: CGFloat = (UIDevice.current.userInterfaceIdiom == .pad) ? 90 : 50
                 self.bannerAd = MAAdView(adUnitIdentifier: adsId, adFormat: (UIDevice.current.userInterfaceIdiom == .pad) ? .leader : .banner)
+                self.bannerAd?.frame = CGRectMake(0, 0, UIScreen.main.bounds.width, height)
             }
-            
             
             self.bannerAd?.delegate = self
             self.bannerAd?.revenueDelegate = self
@@ -92,7 +99,21 @@ public class iAdsMaxSDK_BannerManager: NSObject, iAdsCoreSDK_BannerProtocol {
         }
         
         containerView.iComponentsSDK_removeAllSubviews()
-        containerView.iComponentsSDK_addSubView(subView: bannerAd)
+        containerView.addSubview(bannerAd)
+//        containerView.iComponentsSDK_addSubViewCenter(subView: bannerAd)
+        bannerAd.translatesAutoresizingMaskIntoConstraints = false
+
+        bannerAd.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
+        bannerAd.centerXAnchor.constraint(equalTo: containerView.centerXAnchor).isActive = true
+        
+        if isMrec ?? false {
+            bannerAd.widthAnchor.constraint(equalToConstant: 300).isActive = true
+            bannerAd.heightAnchor.constraint(equalToConstant: 250).isActive = true
+        } else {
+            let height: CGFloat = (UIDevice.current.userInterfaceIdiom == .pad) ? 90 : 50
+            bannerAd.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width).isActive = true
+            bannerAd.heightAnchor.constraint(equalToConstant: height).isActive = true
+        }
         
         iAdsCoreSDK_AdTrack().tracking(placement: self.placement,
                                        ad_status: .showed,
