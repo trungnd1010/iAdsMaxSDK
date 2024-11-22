@@ -7,6 +7,7 @@
 import AppLovinSDK
 import iAdsCoreSDK
 import iComponentsSDK
+import iTrackingSDK
 
 
 public class iAdsMaxSDK_RewardedManager: NSObject, iAdsCoreSDK_RewardedProtocol {
@@ -191,7 +192,8 @@ extension iAdsMaxSDK_RewardedManager: MAAdRevenueDelegate, MAAdDelegate  {
                                       ad_format: .Rewarded_Video,
                                       sub_ad_format: .open,
                                       placement: placement,
-                                      ad_id: "")
+                                      ad_id: "",
+                                      source: .AdSourceAdjust_AppLovinMAX)
         
         iAdsCoreSDK_AdTrack().tracking(placement: placement,
                                        ad_status: .impression,

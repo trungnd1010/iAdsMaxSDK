@@ -8,6 +8,8 @@ import UIKit
 import AppLovinSDK
 import iAdsCoreSDK
 import iComponentsSDK
+import iTrackingSDK
+
 
 public class iAdsMaxSDK_NativeManager: NSObject, iAdsCoreSDK_NativeProtocol {
     
@@ -178,7 +180,8 @@ extension iAdsMaxSDK_NativeManager: MAAdRevenueDelegate  {
                                       ad_format: .Native,
                                       sub_ad_format: .native,
                                       placement: placement,
-                                      ad_id: "")
+                                      ad_id: "",
+                                      source: .AdSourceAdjust_AppLovinMAX)
         
         iAdsCoreSDK_AdTrack().tracking(placement: self.placement,
                                        ad_status: .impression,

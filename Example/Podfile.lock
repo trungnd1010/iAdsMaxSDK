@@ -8,18 +8,18 @@ PODS:
   - AmazonPublisherServicesSDK (4.10.1)
   - AppLovinMediationAmazonAdMarketplaceAdapter (4.10.1.0):
     - AppLovinSDK
-  - AppLovinMediationBidMachineAdapter (3.1.0.0.0):
+  - AppLovinMediationBidMachineAdapter (3.1.1.0.0):
     - AppLovinSDK (>= 13.0.0)
-    - BidMachine (= 3.1.0)
+    - BidMachine (= 3.1.1)
   - AppLovinMediationByteDanceAdapter (6.3.1.0.0):
     - Ads-Global (= 6.3.1.0)
     - AppLovinSDK (>= 13.0.0)
   - AppLovinMediationFacebookAdapter (6.15.2.1):
     - AppLovinSDK (>= 13.0.0)
     - FBAudienceNetwork (= 6.15.2)
-  - AppLovinMediationFyberAdapter (8.3.2.1):
+  - AppLovinMediationFyberAdapter (8.3.3.0):
     - AppLovinSDK (>= 13.0.0)
-    - Fyber_Marketplace_SDK (= 8.3.2)
+    - Fyber_Marketplace_SDK (= 8.3.3)
   - AppLovinMediationGoogleAdapter (11.12.0.0):
     - AppLovinSDK (>= 13.0.0)
     - Google-Mobile-Ads-SDK (= 11.12.0)
@@ -36,25 +36,25 @@ PODS:
   - AppLovinMediationOguryPresageAdapter (5.0.1.0):
     - AppLovinSDK
     - OgurySdk (= 5.0.1)
-  - AppLovinMediationUnityAdsAdapter (4.12.4.0):
+  - AppLovinMediationUnityAdsAdapter (4.12.5.0):
     - AppLovinSDK (>= 13.0.0)
-    - UnityAds (= 4.12.4)
+    - UnityAds (= 4.12.5)
   - AppLovinMediationVungleAdapter (7.4.2.1):
     - AppLovinSDK (>= 13.0.0)
     - VungleAds (= 7.4.2)
   - AppLovinSDK (13.0.1)
-  - BidMachine (3.1.0):
-    - BidMachine/Static (= 3.1.0)
-  - BidMachine/Static (3.1.0):
-    - StackModules/Static (~> 3.0.0)
+  - BidMachine (3.1.1):
+    - BidMachine/Static (= 3.1.1)
+  - BidMachine/Static (3.1.1):
+    - StackModules/Static (~> 3.0.1)
   - FBAudienceNetwork (6.15.2)
-  - Fyber_Marketplace_SDK (8.3.2)
+  - Fyber_Marketplace_SDK (8.3.3)
   - Google-Mobile-Ads-SDK (11.12.0):
     - GoogleUserMessagingPlatform (>= 1.1)
   - GoogleUserMessagingPlatform (2.7.0)
-  - iAdsCoreSDK (1.10.0):
+  - iAdsCoreSDK (1.11.0):
     - iTrackingSDK
-  - iAdsMaxSDK (1.15.0):
+  - iAdsMaxSDK (1.17.0):
     - AmazonPublisherServicesSDK
     - AppLovinMediationAmazonAdMarketplaceAdapter
     - AppLovinMediationBidMachineAdapter
@@ -74,7 +74,7 @@ PODS:
   - iComponentsSDK (1.0.0)
   - InMobiSDK (10.8.0)
   - iReadFileConfigSDK (1.0.0)
-  - iTrackingSDK (1.2.0):
+  - iTrackingSDK (1.3.0):
     - Adjust (= 4.38.4)
     - iReadFileConfigSDK
   - MintegralAdSDK (7.7.3):
@@ -130,18 +130,18 @@ PODS:
     - OguryAds (= 4.0.1)
     - OguryCore (= 2.0.0)
   - OMSDK_Appodeal (1.5.2)
-  - StackModules/Core-Static (3.0.0)
-  - StackModules/ProductPresentation-Static (3.0.0):
+  - StackModules/Core-Static (3.0.1)
+  - StackModules/ProductPresentation-Static (3.0.1):
     - StackModules/Core-Static
-  - StackModules/Rendering-Static (3.0.0):
+  - StackModules/Rendering-Static (3.0.1):
     - OMSDK_Appodeal (~> 1.5.2)
     - StackModules/Core-Static
     - StackModules/ProductPresentation-Static
-  - StackModules/Static (3.0.0):
+  - StackModules/Static (3.0.1):
     - StackModules/Core-Static
     - StackModules/ProductPresentation-Static
     - StackModules/Rendering-Static
-  - UnityAds (4.12.4)
+  - UnityAds (4.12.5)
   - VungleAds (7.4.2)
 
 DEPENDENCIES:
@@ -193,36 +193,36 @@ SPEC CHECKSUMS:
   Ads-Global: 1f1c01c4b217b317bfe012e93fab145a5c25e03c
   AmazonPublisherServicesSDK: 8e6b685c1c6fdc17a24f6723ff6f0fe7036f7326
   AppLovinMediationAmazonAdMarketplaceAdapter: 1837f850885b644f28691a2005e30e3af7861e82
-  AppLovinMediationBidMachineAdapter: 36610e221b9fae8a84d1a020617f10f0e23db78b
+  AppLovinMediationBidMachineAdapter: 47ab3fc5b5ea224665ee0facacf553f83b5b3081
   AppLovinMediationByteDanceAdapter: 1fd63eb56c144abb06b1bb88bd63344db6c57daf
   AppLovinMediationFacebookAdapter: a569c3015e24b5e00049a46bb344ba00894b3541
-  AppLovinMediationFyberAdapter: 5fa1488a43fd8359f028a07f4fbf091835eee8ba
+  AppLovinMediationFyberAdapter: d37dfca510458b12cd94a1a569dd2d67dc2852c6
   AppLovinMediationGoogleAdapter: 63482ef846f4c4203cd407679c0d70e3c43489a4
   AppLovinMediationGoogleAdManagerAdapter: 7939a76df5bd3beb229f875617dfc8926b820b8c
   AppLovinMediationInMobiAdapter: 3c85806a4d9a96a58e894eff1b652fa38d4823d8
   AppLovinMediationMintegralAdapter: 97d210078a2de1d2f5c922346010ab844e046271
   AppLovinMediationOguryPresageAdapter: 2154b8b0c70c67c6ed7db7177a1cdc00ff1c667c
-  AppLovinMediationUnityAdsAdapter: d3d2c0def05e24d9d00119ced77dc0813cc40f34
+  AppLovinMediationUnityAdsAdapter: bfa3172896aea71edbf5d3c429e92f09bb8a21ec
   AppLovinMediationVungleAdapter: c21018a07aeca248d8cca28cf027e6d620a7fe1d
   AppLovinSDK: fdae6a4361c9c9b09f8d7d18ede792368221d987
-  BidMachine: 0d94e91181c69ac075a7b3657d8ee753f1e02eb1
+  BidMachine: 0deb881916c2063690debcbe98b0b5f11f6ce40d
   FBAudienceNetwork: 2457a89b45e2596241fd81b0c2fd8cb6f6053869
-  Fyber_Marketplace_SDK: 215c2020efd507c0e97f40871e96a26918f8986e
+  Fyber_Marketplace_SDK: a39065cbd4bb3af733f3e9691fc9a098991fd3a2
   Google-Mobile-Ads-SDK: 3a76704456669fbed2057efc8bdb99050ad0e3fb
   GoogleUserMessagingPlatform: a8b56893477f67212fbc8411c139e61d463349f5
-  iAdsCoreSDK: 4163821ddefcfd8fb23eae32468831d9c902e895
-  iAdsMaxSDK: 2c135f35f152cc2a0d6b9ebeddade421754830dd
+  iAdsCoreSDK: fde8c13f3ea1196178ab54ec5e5d0b5f465810c8
+  iAdsMaxSDK: 4d008e5f5a0971fbb3b5d66be3bedee0ae4f8dee
   iComponentsSDK: 56858f4f510d4bbbd1cf2526a4b7848eac9d5d9c
   InMobiSDK: 0cfb1a1eb5112fa0236ae1fab549e31fb96c9566
   iReadFileConfigSDK: 81543aa77b5b5c1a2669ef115e66c25482bdee23
-  iTrackingSDK: 73b72f9089a8b13ae9dc9d105ab689850eb2dab1
+  iTrackingSDK: 78fd2c3d4fbf67bd9c330c7f0a5d45877499fe45
   MintegralAdSDK: 217cca20529055c8791c82985dd7a74864e49fd0
   OguryAds: 5bb3440777dbe8439621985761f5ebdf0b8c593c
   OguryCore: 1c7c2009f958b7026d5bca89e4c97dfa3fa9ef87
   OgurySdk: 95d23dee02e7c022f72328652b3e0d3eb694512a
   OMSDK_Appodeal: 066f9da2c77d560e319341c6bd4739828bc65842
-  StackModules: 6413d68c2a5db9fd5daa3ec8f89fee57455ef1e8
-  UnityAds: df29459d94ca7c0676cdd9ba96ef6420670ffbfa
+  StackModules: 3a8cbd3d0f48f678b9310f471c7b84877e40201e
+  UnityAds: a4036ed911b4df2227d8137f4f777fcb86c4a2df
   VungleAds: d7cf66a6dfd390a583ea2b2cfb9af1043b686e58
 
 PODFILE CHECKSUM: 06259e14a005296848982aa707a9eb433d9a187f

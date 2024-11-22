@@ -7,6 +7,7 @@
 import AppLovinSDK
 import iAdsCoreSDK
 import iComponentsSDK
+import iTrackingSDK
 
 
 public class iAdsMaxSDK_InterManager: NSObject, iAdsCoreSDK_IntertitialProtocol {
@@ -178,7 +179,8 @@ extension iAdsMaxSDK_InterManager: MAAdRevenueDelegate, MAAdDelegate  {
                                       ad_format: .Interstitial,
                                       sub_ad_format: .inter,
                                       placement: placement,
-                                      ad_id: "")
+                                      ad_id: "",
+                                      source: .AdSourceAdjust_AppLovinMAX)
         
         iAdsCoreSDK_AdTrack().tracking(placement: placement,
                                        ad_status: .impression,

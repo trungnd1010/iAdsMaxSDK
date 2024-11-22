@@ -8,6 +8,8 @@ import UIKit
 import AppLovinSDK
 import iAdsCoreSDK
 import iComponentsSDK
+import iTrackingSDK
+
 
 public class iAdsMaxSDK_BannerManager: NSObject, iAdsCoreSDK_BannerProtocol {
     
@@ -253,7 +255,8 @@ extension iAdsMaxSDK_BannerManager: MAAdRevenueDelegate  {
                                       ad_format: .Banner,
                                       sub_ad_format: paid_ad_format,
                                       placement: placement,
-                                      ad_id: "")
+                                      ad_id: "",
+                                      source: .AdSourceAdjust_AppLovinMAX)
         
         iAdsCoreSDK_AdTrack().tracking(placement: self.placement,
                                        ad_status: .impression,
