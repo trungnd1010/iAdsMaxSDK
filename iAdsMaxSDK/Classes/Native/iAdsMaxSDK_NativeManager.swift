@@ -99,6 +99,20 @@ public class iAdsMaxSDK_NativeManager: NSObject, iAdsCoreSDK_NativeProtocol {
             containerView.iComponentsSDK_removeAllSubviews()
             containerView.iComponentsSDK_addSubView(subView: nativeMaxView)
             
+            iAdsCoreSDK_AdTrack().tracking(placement: self.placement,
+                                           ad_status: .showed,
+                                           ad_unit_name: adsId,
+                                           ad_action: .show,
+                                           script_name: .show_xx,
+                                           ad_network: adNetwork,
+                                           ad_format: .Native,
+                                           sub_ad_format: .native,
+                                           error_code: "",
+                                           message: "",
+                                           time: "",
+                                           priority: "",
+                                           recall_ad: .no)
+            
         } else {
             completion(.failure(iAdsMaxSDK_Error.noAdsToShow))
         }
@@ -185,20 +199,6 @@ extension iAdsMaxSDK_NativeManager: MAAdRevenueDelegate  {
         
         iAdsCoreSDK_AdTrack().tracking(placement: self.placement,
                                        ad_status: .impression,
-                                       ad_unit_name: adsId,
-                                       ad_action: .show,
-                                       script_name: .show_xx,
-                                       ad_network: adNetwork,
-                                       ad_format: .Native,
-                                       sub_ad_format: .native,
-                                       error_code: "",
-                                       message: "",
-                                       time: "",
-                                       priority: "",
-                                       recall_ad: .no)
-        
-        iAdsCoreSDK_AdTrack().tracking(placement: self.placement,
-                                       ad_status: .showed,
                                        ad_unit_name: adsId,
                                        ad_action: .show,
                                        script_name: .show_xx,

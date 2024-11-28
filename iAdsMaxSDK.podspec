@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'iAdsMaxSDK'
-  s.version          = '1.19.0'
+  s.version          = '1.20.0'
   s.summary          = 'A short description of iAdsMaxSDK.'
 
 # This description is used to generate tags and improve search results.
