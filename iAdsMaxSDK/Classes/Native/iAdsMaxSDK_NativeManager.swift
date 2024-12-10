@@ -37,7 +37,7 @@ public class iAdsMaxSDK_NativeManager: NSObject, iAdsCoreSDK_NativeProtocol {
     
     private var nativeAd: MAAd?
     
-    private var dateStartLoad: Date = Date()
+    private var dateStartLoad: Double = Date().timeIntervalSince1970
     
     public static
     func make() -> iAdsCoreSDK_NativeProtocol {
@@ -52,7 +52,7 @@ public class iAdsMaxSDK_NativeManager: NSObject, iAdsCoreSDK_NativeProtocol {
             completion(.failure(iAdsMaxSDK_Error.adsIdIsLoading))
             return
         }
-        self.dateStartLoad = Date()
+        self.dateStartLoad = Date().timeIntervalSince1970
         self.completionLoad = completion
         self.isLoading = true
         self.adsId = adsId
@@ -60,7 +60,7 @@ public class iAdsMaxSDK_NativeManager: NSObject, iAdsCoreSDK_NativeProtocol {
         nativeAdLoader = .init(adUnitIdentifier: adsId)
         nativeAdLoader.placement = placement
         nativeAdLoader.nativeAdDelegate = self
-        nativeAdLoader.revenueDelegate = self
+        
         nativeAdLoader.loadAd()
         
     }
@@ -75,6 +75,9 @@ public class iAdsMaxSDK_NativeManager: NSObject, iAdsCoreSDK_NativeProtocol {
         self.priority = "\(priority)"
         self.placement = placement
         self.completionShow = completion
+        
+        nativeAdLoader.revenueDelegate = self
+        nativeAdLoader.nativeAdDelegate = self
         
         if let nativeAd = nativeAd, let nativeMaxView = nativeMaxView as? BaseMAXNativeView {
             if nativeAd.nativeAd?.isExpired ?? false
@@ -114,6 +117,20 @@ public class iAdsMaxSDK_NativeManager: NSObject, iAdsCoreSDK_NativeProtocol {
                                            recall_ad: .no)
             
         } else {
+            
+            iAdsCoreSDK_AdTrack().tracking(placement: self.placement,
+                                           ad_status: .show_failed,
+                                           ad_unit_name: adsId,
+                                           ad_action: .show,
+                                           script_name: .show_xx,
+                                           ad_network: adNetwork,
+                                           ad_format: .Native,
+                                           sub_ad_format: .native,
+                                           error_code: String(iAdsMaxSDK_Error.noAdsToShow.code),
+                                           message: iAdsMaxSDK_Error.noAdsToShow.code.description,
+                                           time: "",
+                                           priority: "",
+                                           recall_ad: .no)
             completion(.failure(iAdsMaxSDK_Error.noAdsToShow))
         }
     }
@@ -134,9 +151,10 @@ extension iAdsMaxSDK_NativeManager: MANativeAdDelegate {
                                        sub_ad_format: .native,
                                        error_code: "",
                                        message: "",
-                                       time: "\(Date().timeIntervalSince1970 - dateStartLoad.timeIntervalSince1970)",
+                                       time: iAdsCoreSDK_AdTrack().getElapsedTime(startTime: self.dateStartLoad),
                                        priority: "",
                                        recall_ad: .no)
+        nativeAdLoader.nativeAdDelegate = nil
         completionLoad?(.success(()))
     }
     
@@ -159,6 +177,7 @@ extension iAdsMaxSDK_NativeManager: MANativeAdDelegate {
     public func didFailToLoadNativeAd(forAdUnitIdentifier adUnitIdentifier: String, withError error: MAError) {
         isHasAds = false
         isLoading = false
+        nativeAdLoader.nativeAdDelegate = nil
         iAdsCoreSDK_AdTrack().tracking(placement: self.placement,
                                        ad_status: .load_failed,
                                        ad_unit_name: adsId,
@@ -169,7 +188,7 @@ extension iAdsMaxSDK_NativeManager: MANativeAdDelegate {
                                        sub_ad_format: .native,
                                        error_code: "\(error.code.rawValue)",
                                        message: error.message,
-                                       time: "\(Date().timeIntervalSince1970 - dateStartLoad.timeIntervalSince1970)",
+                                       time: iAdsCoreSDK_AdTrack().getElapsedTime(startTime: self.dateStartLoad),
                                        priority: "",
                                        recall_ad: .no)
         completionLoad?(.failure(NSError.init(domain: error.message, code: error.code.rawValue)))

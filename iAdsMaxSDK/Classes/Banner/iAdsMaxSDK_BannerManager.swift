@@ -32,7 +32,10 @@ public class iAdsMaxSDK_BannerManager: NSObject, iAdsCoreSDK_BannerProtocol {
     private var paid_ad_format = iAdsCoreSDK_PaidAd.PaidAdSubAdFormat.banner
     
     private var bannerAd: MAAdView?
-    private var dateStartLoad: Date = Date()
+    
+    private var dateStartLoad: Double = Date().timeIntervalSince1970
+    
+//    weak var containerView: UIView?
     
     private var isMrec: Bool?
     
@@ -51,7 +54,7 @@ public class iAdsMaxSDK_BannerManager: NSObject, iAdsCoreSDK_BannerProtocol {
             completion(.failure(iAdsMaxSDK_Error.adsIdIsLoading))
             return
         }
-        self.dateStartLoad = Date()
+        self.dateStartLoad = Date().timeIntervalSince1970
         self.completionLoad = completion
         self.isLoading = true
         self.adsId = adsId
@@ -80,7 +83,6 @@ public class iAdsMaxSDK_BannerManager: NSObject, iAdsCoreSDK_BannerProtocol {
             }
             
             self.bannerAd?.delegate = self
-            self.bannerAd?.revenueDelegate = self
             
             self.bannerAd?.loadAd()
         }
@@ -94,12 +96,14 @@ public class iAdsMaxSDK_BannerManager: NSObject, iAdsCoreSDK_BannerProtocol {
         self.isHasAds = false
         self.priority = "\(priority)"
         self.placement = placement
+//        self.containerView = containerView
         
         guard let bannerAd = bannerAd else {
             completion(.failure(iAdsMaxSDK_Error.noAdsToShow))
             return
         }
-        
+        self.bannerAd?.revenueDelegate = self
+        self.bannerAd?.delegate = self
         containerView.iComponentsSDK_removeAllSubviews()
         containerView.addSubview(bannerAd)
 //        containerView.iComponentsSDK_addSubViewCenter(subView: bannerAd)
@@ -160,9 +164,10 @@ extension iAdsMaxSDK_BannerManager: MAAdViewAdDelegate {
                                        sub_ad_format: sub_ad_format,
                                        error_code: "",
                                        message: "",
-                                       time: "\(Date().timeIntervalSince1970 - dateStartLoad.timeIntervalSince1970)",
+                                       time: iAdsCoreSDK_AdTrack().getElapsedTime(startTime: self.dateStartLoad),
                                        priority: "",
                                        recall_ad: .no)
+        self.bannerAd?.delegate = nil
         completionLoad?(.success(()))
         completionLoad = nil
     }
@@ -180,10 +185,12 @@ extension iAdsMaxSDK_BannerManager: MAAdViewAdDelegate {
                                        sub_ad_format: sub_ad_format,
                                        error_code: "\(error.code.rawValue)",
                                        message: error.message,
-                                       time: "\(Date().timeIntervalSince1970 - dateStartLoad.timeIntervalSince1970)",
+                                       time: iAdsCoreSDK_AdTrack().getElapsedTime(startTime: self.dateStartLoad),
                                        priority: "",
                                        recall_ad: .no)
         completionLoad?(.failure(NSError.init(domain: error.message, code: error.code.rawValue)))
+        self.bannerAd?.delegate = nil
+
         completionLoad = nil
     }
     
@@ -227,15 +234,15 @@ extension iAdsMaxSDK_BannerManager: MAAdViewAdDelegate {
         isHasAds = false
         isLoading = false
         iAdsCoreSDK_AdTrack().tracking(placement: self.placement,
-                                       ad_status: .load_failed,
+                                       ad_status: .show_failed,
                                        ad_unit_name: adsId,
                                        ad_action: .load,
                                        script_name: .load_xx,
                                        ad_network: adNetwork,
                                        ad_format: .Banner,
                                        sub_ad_format: sub_ad_format,
-                                       error_code: "",
-                                       message: "",
+                                       error_code: "\(error.code)",
+                                       message: error.message,
                                        time: "",
                                        priority: "",
                                        recall_ad: .no)

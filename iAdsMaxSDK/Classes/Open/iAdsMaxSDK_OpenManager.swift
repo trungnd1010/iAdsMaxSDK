@@ -32,7 +32,7 @@ public class iAdsMaxSDK_OpenManager: NSObject, iAdsCoreSDK_OpenProtocol {
     private var adNetwork: String = "AdMax"
     private var adsId: String = ""
     
-    private var dateStartLoad: Date = Date()
+    private var dateStartLoad: Double = Date().timeIntervalSince1970
     
     public static func make() -> iAdsCoreSDK_OpenProtocol {
         return iAdsMaxSDK_OpenManager()
@@ -43,7 +43,7 @@ public class iAdsMaxSDK_OpenManager: NSObject, iAdsCoreSDK_OpenProtocol {
             completion(.failure(iAdsMaxSDK_Error.adsIdIsLoading))
             return
         }
-        self.dateStartLoad = Date()
+        self.dateStartLoad = Date().timeIntervalSince1970
         self.isLoading = true
         self.adsId = adsId
         self.completionLoad = completion
@@ -87,7 +87,7 @@ extension iAdsMaxSDK_OpenManager: MAAdViewAdDelegate {
                                        sub_ad_format: .open,
                                        error_code: "",
                                        message: "",
-                                       time: "\(Date().timeIntervalSince1970 - dateStartLoad.timeIntervalSince1970)",
+                                       time: iAdsCoreSDK_AdTrack().getElapsedTime(startTime: self.dateStartLoad),
                                        priority: "",
                                        recall_ad: .no)
         
@@ -106,7 +106,7 @@ extension iAdsMaxSDK_OpenManager: MAAdViewAdDelegate {
                                        sub_ad_format: .open,
                                        error_code: "\(error.code.rawValue)",
                                        message: error.message,
-                                       time: "\(Date().timeIntervalSince1970 - dateStartLoad.timeIntervalSince1970)",
+                                       time: iAdsCoreSDK_AdTrack().getElapsedTime(startTime: self.dateStartLoad),
                                        priority: "",
                                        recall_ad: .no)
         completionLoad?(.failure(NSError.init(domain: error.message, code: error.code.rawValue)))
@@ -162,6 +162,19 @@ extension iAdsMaxSDK_OpenManager: MAAdViewAdDelegate {
     }
     
     public func didFail(toDisplay ad: MAAd, withError error: MAError) {
+            iAdsCoreSDK_AdTrack().tracking(placement: placement,
+                                           ad_status: .show_failed,
+                                           ad_unit_name: adsId,
+                                           ad_action: .show,
+                                           script_name: .show_xx,
+                                           ad_network: adNetwork,
+                                           ad_format: .Open_Ad,
+                                           sub_ad_format: .open,
+                                           error_code: "\(error.code)",
+                                           message: error.message,
+                                           time: "",
+                                           priority: priority,
+                                           recall_ad: .no)
         completionShow?(.failure(NSError(domain: error.message, code: error.code.rawValue)))
     }
 }
