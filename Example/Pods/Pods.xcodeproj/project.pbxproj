@@ -11,7 +11,7 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 43D0A7E484B2BA7F6EE58324D3FC700A /* Build configuration list for PBXAggregateTarget "AppLovinMediationVungleAdapter" */;
 			buildPhases = (
-				57706CD08601943DD69EF026C0DE5E17 /* [CP] Copy XCFrameworks */,
+				0F092FB61559E1FCF83BB88BDCC9D179 /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
 				E492C7AF30239F9862E6B1751A0CE8C6 /* PBXTargetDependency */,
@@ -55,7 +55,7 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 57611A2D11BBC8E328B10D14200427E3 /* Build configuration list for PBXAggregateTarget "AppLovinMediationBidMachineAdapter" */;
 			buildPhases = (
-				251C4E4D1251C72E1963D985CE03EF4C /* [CP] Copy XCFrameworks */,
+				BE1F36FFF7257679BE88BE42BB174E62 /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
 				FA261B754FE3C68AABB8A86A8037AC17 /* PBXTargetDependency */,
@@ -174,7 +174,7 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 01B331BFB2FCFD5134F329C7A81917A8 /* Build configuration list for PBXAggregateTarget "AppLovinMediationFyberAdapter" */;
 			buildPhases = (
-				71F1487BAD039A46B5C9E98430C2B84E /* [CP] Copy XCFrameworks */,
+				C422658C65A37265916004304C0D57DC /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
 				3A8541C60D7078DF0870493A11613413 /* PBXTargetDependency */,
@@ -231,7 +231,7 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 42F6CB11D0D8D9A20B0085C46FCE1A66 /* Build configuration list for PBXAggregateTarget "AppLovinMediationGoogleAdManagerAdapter" */;
 			buildPhases = (
-				8C22F61A011639393484713761697EB5 /* [CP] Copy XCFrameworks */,
+				AD1CD8A18B3F8C78D5722AF6571A57E7 /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
 				049A6ACD2A9A5DCE0E5DCC3EF02248B6 /* PBXTargetDependency */,
@@ -254,7 +254,7 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 03EF3D54C9E11743F9572A089D460907 /* Build configuration list for PBXAggregateTarget "AppLovinMediationGoogleAdapter" */;
 			buildPhases = (
-				AA4A2AA08AB1BF05FF05ABF102042CE7 /* [CP] Copy XCFrameworks */,
+				3EE241F317C6CDE04BD12D32B5FD709C /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
 				FDB58B840F2320A68C9C71574886A4CD /* PBXTargetDependency */,
@@ -338,7 +338,7 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 5B2602F3283AA2E8CE6D4EAA0D7A0E5C /* Build configuration list for PBXAggregateTarget "AppLovinMediationByteDanceAdapter" */;
 			buildPhases = (
-				960248CE4D3FBFAA2042C368118DFF8B /* [CP] Copy XCFrameworks */,
+				E7136154AC96B3925E6A42C71CE51C75 /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
 				8679C8153DE6A03CA270D88D7C343E0C /* PBXTargetDependency */,
@@ -1217,6 +1217,7 @@
 		22BC2BD213BFDC4F346563BCD8DA2D22 /* FBAudienceNetwork.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = FBAudienceNetwork.xcframework; path = Static/FBAudienceNetwork.xcframework; sourceTree = "<group>"; };
 		24302383C4C6F62CCBF9BD6A2435A2E5 /* ResourceBundle-AdsGlobalSDK-Ads-Global-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-AdsGlobalSDK-Ads-Global-Info.plist"; sourceTree = "<group>"; };
 		257B190BD6CF32C42305E9EFDD5192FC /* AppLovinMediationGoogleAdManagerAdapter-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AppLovinMediationGoogleAdManagerAdapter-xcframeworks.sh"; sourceTree = "<group>"; };
+		258483AE3158E5374E5977B4B5224479 /* AppLovinMediationVungleAdapter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppLovinMediationVungleAdapter.xcframework; path = "AppLovinMediationVungleAdapter-7.4.3.0/AppLovinMediationVungleAdapter.xcframework"; sourceTree = "<group>"; };
 		268B2B7F922882B1BDCF0797D7D3729B /* FBAdSettingsBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdSettingsBridge.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBAdSettingsBridge.h"; sourceTree = "<group>"; };
 		274B10C22C8D73C0EEF49C32F08280D6 /* GoogleUserMessagingPlatform-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "GoogleUserMessagingPlatform-xcframeworks.sh"; sourceTree = "<group>"; };
 		27864D84CB8E64696FB88E76972210CE /* Pods-iAdsMaxSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iAdsMaxSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -1231,13 +1232,13 @@
 		2C29010A08C3C9AB475569F505017E05 /* FBAdChoicesView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdChoicesView.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBAdChoicesView.h"; sourceTree = "<group>"; };
 		2C9A5F17E558BC1B9DE118BB7BED5D87 /* NSString+ADJAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+ADJAdditions.m"; path = "Adjust/ADJAdditions/NSString+ADJAdditions.m"; sourceTree = "<group>"; };
 		2D4E026C98F2C4B5DC6F5B239F2EDC2B /* FBAdSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdSettings.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBAdSettings.h"; sourceTree = "<group>"; };
-		2DCB40487B041690F53723BC7B999E55 /* AppLovinMediationGoogleAdManagerAdapter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppLovinMediationGoogleAdManagerAdapter.xcframework; path = "AppLovinMediationGoogleAdManagerAdapter-11.12.0.0/AppLovinMediationGoogleAdManagerAdapter.xcframework"; sourceTree = "<group>"; };
 		2E6612834A5BD83AC30184188EFB7BEB /* iReadFileConfigSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iReadFileConfigSDK.debug.xcconfig; sourceTree = "<group>"; };
 		2EC776391CA5C6FDA7CF9BC11DE3BED3 /* ADJPurchaseVerificationResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJPurchaseVerificationResult.m; path = Adjust/ADJPurchaseVerificationResult.m; sourceTree = "<group>"; };
 		2F14CF59C83FFAF21D1D395C7E6D1435 /* StackModules-StackRendering */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "StackModules-StackRendering"; path = StackRendering.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F1AC70F01B75D66416665E6C18D40EF /* AppLovinMediationBidMachineAdapter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppLovinMediationBidMachineAdapter.debug.xcconfig; sourceTree = "<group>"; };
 		2F797FAC61F407582EE8D09C79C15BAA /* FBNativeAdBaseView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeAdBaseView.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBNativeAdBaseView.h"; sourceTree = "<group>"; };
 		30109E89CE1ECE929102FAAB364F6E5F /* AppLovinMediationInMobiAdapter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppLovinMediationInMobiAdapter.debug.xcconfig; sourceTree = "<group>"; };
+		31230FF96670686B847D5FE43EDECABF /* AppLovinMediationGoogleAdapter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppLovinMediationGoogleAdapter.xcframework; path = "AppLovinMediationGoogleAdapter-11.13.0.0/AppLovinMediationGoogleAdapter.xcframework"; sourceTree = "<group>"; };
 		3180CDF66622AA76532A2A4FEE9C4774 /* ADJThirdPartySharing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJThirdPartySharing.m; path = Adjust/ADJThirdPartySharing.m; sourceTree = "<group>"; };
 		31D1CDA8CE34A6F71C6D62B49CDFAB2E /* ADJSubscription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJSubscription.m; path = Adjust/ADJSubscription.m; sourceTree = "<group>"; };
 		32B65F3708F959F32396ED6EDFD33281 /* ADJPackageHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJPackageHandler.m; path = Adjust/ADJPackageHandler.m; sourceTree = "<group>"; };
@@ -1252,7 +1253,6 @@
 		37EFA34CEDA468C54EB8F71B2B98A6D4 /* FBMediaView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBMediaView.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBMediaView.h"; sourceTree = "<group>"; };
 		383BEEEC93283902C5F57AB0BE65CB41 /* FBAdImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdImage.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBAdImage.h"; sourceTree = "<group>"; };
 		38609F19EF573909F28FCCBD2E22B624 /* ADJSessionSuccess.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJSessionSuccess.m; path = Adjust/ADJSessionSuccess.m; sourceTree = "<group>"; };
-		386FFE0B2D4BC9E999228E71A7A71F7C /* AppLovinMediationBidMachineAdapter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppLovinMediationBidMachineAdapter.xcframework; path = "AppLovinMediationBidMachineAdapter-3.1.1.0.0/AppLovinMediationBidMachineAdapter.xcframework"; sourceTree = "<group>"; };
 		38DBC8488FD31D2C5EABE432E502DE56 /* ADJPackageBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJPackageBuilder.m; path = Adjust/ADJPackageBuilder.m; sourceTree = "<group>"; };
 		38FB74B6772227A8DAC1E1F5404C6FB7 /* Google-Mobile-Ads-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Google-Mobile-Ads-SDK-dummy.m"; sourceTree = "<group>"; };
 		3998091512768CD07733CB4F02B4BD9F /* Google-Mobile-Ads-SDK-GoogleMobileAdsResources */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Google-Mobile-Ads-SDK-GoogleMobileAdsResources"; path = GoogleMobileAdsResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1325,6 +1325,7 @@
 		6558E2A1C036228363EF9447EECAE0B6 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
 		6659905C7100BBF615C9CC23719DB014 /* DTBiOSSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = DTBiOSSDK.xcframework; path = "APS_iOS_SDK-4.10.1/DTBiOSSDK.xcframework"; sourceTree = "<group>"; };
 		67DBC44A8FC55DA63653B9885084972E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		68446A76312D0C356AA7246819FD5FBC /* AppLovinMediationByteDanceAdapter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppLovinMediationByteDanceAdapter.xcframework; path = "AppLovinMediationByteDanceAdapter-6.4.0.6.0/AppLovinMediationByteDanceAdapter.xcframework"; sourceTree = "<group>"; };
 		688B405AB1F90BDA9F3921C379B39E94 /* AppLovinMediationVungleAdapter-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AppLovinMediationVungleAdapter-xcframeworks.sh"; sourceTree = "<group>"; };
 		6C1612AF18A44503720DA99C694D141F /* ADJAdRevenue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJAdRevenue.m; path = Adjust/ADJAdRevenue.m; sourceTree = "<group>"; };
 		6D2914F972F559473A33FA0619A58F6E /* GoogleUserMessagingPlatform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleUserMessagingPlatform.release.xcconfig; sourceTree = "<group>"; };
@@ -1370,7 +1371,6 @@
 		84CFEEA4CF826AEB2EC30034777A39D3 /* StackModules-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "StackModules-xcframeworks.sh"; sourceTree = "<group>"; };
 		84E73B216651B0BBA47B7748DBA63645 /* ADJSdkClickHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJSdkClickHandler.h; path = Adjust/ADJSdkClickHandler.h; sourceTree = "<group>"; };
 		8562F34617FAC9A2E0EA3C180B49BB5A /* ResourceBundle-UnityAdsResources-UnityAds-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-UnityAdsResources-UnityAds-Info.plist"; sourceTree = "<group>"; };
-		85668681BCF6ECEF0502EDB536DF98D0 /* AppLovinMediationVungleAdapter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppLovinMediationVungleAdapter.xcframework; path = "AppLovinMediationVungleAdapter-7.4.2.1/AppLovinMediationVungleAdapter.xcframework"; sourceTree = "<group>"; };
 		8586983AA4BDFCE83070FE3447B942C3 /* AppLovinSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppLovinSDK.xcframework; path = "applovin-ios-sdk-13.0.1/AppLovinSDK.xcframework"; sourceTree = "<group>"; };
 		85DCDB8AB31512171AC258140875C449 /* FBAdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdView.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBAdView.h"; sourceTree = "<group>"; };
 		8661978E4E96236CBAE32E00B34DD937 /* AppLovinMediationGoogleAdapter-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AppLovinMediationGoogleAdapter-xcframeworks.sh"; sourceTree = "<group>"; };
@@ -1422,6 +1422,7 @@
 		A282A114896D4B698B09D11E2C5547D5 /* AppLovinMediationOguryPresageAdapter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppLovinMediationOguryPresageAdapter.release.xcconfig; sourceTree = "<group>"; };
 		A2C71AC0F97E0A18839C82137B7FEFC6 /* UIView+FBNativeAdViewTag.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+FBNativeAdViewTag.h"; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/UIView+FBNativeAdViewTag.h"; sourceTree = "<group>"; };
 		A4C039BA31CF56B0CCF2FE789F4ACB65 /* FBNativeAdViewAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeAdViewAttributes.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBNativeAdViewAttributes.h"; sourceTree = "<group>"; };
+		A5995C673D48A4C7A5F1A951836A0AE5 /* AppLovinMediationGoogleAdManagerAdapter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppLovinMediationGoogleAdManagerAdapter.xcframework; path = "AppLovinMediationGoogleAdManagerAdapter-11.13.0.0/AppLovinMediationGoogleAdManagerAdapter.xcframework"; sourceTree = "<group>"; };
 		A6CBA53820349F2663311DAB020214DB /* ADJSessionFailure.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJSessionFailure.m; path = Adjust/ADJSessionFailure.m; sourceTree = "<group>"; };
 		A842EE30A229EA16951C8AC729DBD287 /* iAdsMaxSDKManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iAdsMaxSDKManager.swift; path = iAdsMaxSDK/Classes/iAdsMaxSDKManager.swift; sourceTree = "<group>"; };
 		A86A8D229106C1F1CE89EE67AC537839 /* ResourceBundle-BidMachine-BidMachine-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-BidMachine-BidMachine-Info.plist"; sourceTree = "<group>"; };
@@ -1445,6 +1446,7 @@
 		B6485A34360E877DD3E31C5F20DEC385 /* InMobiSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InMobiSDK.release.xcconfig; sourceTree = "<group>"; };
 		B6735D009FA6CCB3075B7BCA75C74682 /* AppLovinMediationFacebookAdapter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppLovinMediationFacebookAdapter.release.xcconfig; sourceTree = "<group>"; };
 		B681A7DB7F675ECCC84F5A35E486D19F /* AppLovinMediationMintegralAdapter-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AppLovinMediationMintegralAdapter-xcframeworks.sh"; sourceTree = "<group>"; };
+		B6A6BBB5DF9509A85759E1E2B3CA5661 /* AppLovinMediationFyberAdapter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppLovinMediationFyberAdapter.xcframework; path = "AppLovinMediationFyberAdapter-8.3.4.0/AppLovinMediationFyberAdapter.xcframework"; sourceTree = "<group>"; };
 		B6C339432292171DF9AF35D79D97FF46 /* Adjust-Adjust */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Adjust-Adjust"; path = Adjust.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6CFE6398DD5D9F883F18CF8233D440C /* Adjust-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Adjust-prefix.pch"; sourceTree = "<group>"; };
 		B76827D447433FF211E90BF50518B142 /* ADJEventFailure.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJEventFailure.h; path = Adjust/ADJEventFailure.h; sourceTree = "<group>"; };
@@ -1457,6 +1459,7 @@
 		BCE3EF79371DA4F065E221ED5A2716D8 /* iReadFileConfigSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = iReadFileConfigSDK.xcframework; path = frameworks/iReadFileConfigSDK.xcframework; sourceTree = "<group>"; };
 		BDA862545AE9D6F77B4E748EA7151FAD /* FBAudienceNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBAudienceNetwork.debug.xcconfig; sourceTree = "<group>"; };
 		BDB08774F5DA59DF7140AAF834FF47CA /* Google-Mobile-Ads-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Google-Mobile-Ads-SDK.release.xcconfig"; sourceTree = "<group>"; };
+		BDD9AEE17773BE1396302FEED390379B /* AppLovinMediationBidMachineAdapter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppLovinMediationBidMachineAdapter.xcframework; path = "AppLovinMediationBidMachineAdapter-3.1.1.0.1/AppLovinMediationBidMachineAdapter.xcframework"; sourceTree = "<group>"; };
 		BE422EB22A446F7C7B8C5E51116B0616 /* iAdsCoreSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = iAdsCoreSDK.xcframework; path = frameworks/iAdsCoreSDK.xcframework; sourceTree = "<group>"; };
 		BEA9321BE3FAE804324B3495F4B39C10 /* UnityAds-UnityAdsResources */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "UnityAds-UnityAdsResources"; path = UnityAdsResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEE90D2345F62CCE9FA59386958B8BD9 /* FBMediaView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBMediaView.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBMediaView.h"; sourceTree = "<group>"; };
@@ -1490,7 +1493,6 @@
 		D0A41377A6D9D5B77A64FEC18F9CFBB8 /* ADJConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJConfig.m; path = Adjust/ADJConfig.m; sourceTree = "<group>"; };
 		D262482B81B8B58DB6B99B9CF866B60B /* ADJAttribution.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJAttribution.m; path = Adjust/ADJAttribution.m; sourceTree = "<group>"; };
 		D3C311D8388885C3C6B1B84DC2EC6B97 /* FBAdBridgeCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdBridgeCommon.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBAdBridgeCommon.h"; sourceTree = "<group>"; };
-		D40CECFA51F6F8C1E0D260066448FD89 /* AppLovinMediationByteDanceAdapter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppLovinMediationByteDanceAdapter.xcframework; path = "AppLovinMediationByteDanceAdapter-6.3.1.0.0/AppLovinMediationByteDanceAdapter.xcframework"; sourceTree = "<group>"; };
 		D46888CF6DC927C65204D03FFAFCAA74 /* UnityAds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UnityAds.release.xcconfig; sourceTree = "<group>"; };
 		D59997B9E16CB4A071695C5320BC55BF /* Pods-iAdsMaxSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iAdsMaxSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D5A1CC17CBBA74E19E056F879E166F99 /* AppLovinMediationOguryPresageAdapter-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AppLovinMediationOguryPresageAdapter-xcframeworks.sh"; sourceTree = "<group>"; };
@@ -1515,7 +1517,6 @@
 		E8FFE09E21132707BC28092DF0E14FB2 /* Adjust-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Adjust-Info.plist"; sourceTree = "<group>"; };
 		E9C7F07D118AFD2F62332918D6E15430 /* ADJSessionParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJSessionParameters.h; path = Adjust/ADJSessionParameters.h; sourceTree = "<group>"; };
 		EA4C3063624C21328A15D5C2778D9BBD /* ADJSessionParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJSessionParameters.m; path = Adjust/ADJSessionParameters.m; sourceTree = "<group>"; };
-		EA8CCB9A2A1B2FE26DE690E8D8BD2DB7 /* AppLovinMediationGoogleAdapter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppLovinMediationGoogleAdapter.xcframework; path = "AppLovinMediationGoogleAdapter-11.12.0.0/AppLovinMediationGoogleAdapter.xcframework"; sourceTree = "<group>"; };
 		EAAD0DC8EEA09D11C38FD7EC489AC545 /* NSString+ADJAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+ADJAdditions.h"; path = "Adjust/ADJAdditions/NSString+ADJAdditions.h"; sourceTree = "<group>"; };
 		EB004886FFEFA82504F3C88CDCF8B768 /* FBAdDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdDefines.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBAdDefines.h"; sourceTree = "<group>"; };
 		EC2414E003538CBD4E3543407136DA4F /* ADJUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJUtil.m; path = Adjust/ADJUtil.m; sourceTree = "<group>"; };
@@ -1541,7 +1542,6 @@
 		F6CA3C14BFB265A2AFF41AA4284E5C1E /* PAGAdSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = PAGAdSDK.bundle; path = SDK/PAGAdSDK.bundle; sourceTree = "<group>"; };
 		F6D09BAD3245E0B2FB2BFB8E709D3769 /* UIView+FBNativeAdViewTag.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+FBNativeAdViewTag.h"; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/UIView+FBNativeAdViewTag.h"; sourceTree = "<group>"; };
 		F6EC733B74675E4F9AAE95810E064F6B /* StackModules-StackProductPresentation */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "StackModules-StackProductPresentation"; path = StackProductPresentation.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7416862564152DEB26E486FA4D6CD38 /* AppLovinMediationFyberAdapter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppLovinMediationFyberAdapter.xcframework; path = "AppLovinMediationFyberAdapter-8.3.3.0/AppLovinMediationFyberAdapter.xcframework"; sourceTree = "<group>"; };
 		F79381C53330ED0188CA7108A5B9A2D2 /* Pods-iAdsMaxSDK_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iAdsMaxSDK_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		F7F52F29929CAB1394C3F9FE57A29030 /* FBNativeAdBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeAdBase.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBNativeAdBase.h"; sourceTree = "<group>"; };
 		F86B295CE0922F378877D5C063AF8295 /* Pods-iAdsMaxSDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iAdsMaxSDK_Tests-Info.plist"; sourceTree = "<group>"; };
@@ -1697,7 +1697,7 @@
 		04FD9E6518F97D03BD48C7B853F33020 /* AppLovinMediationGoogleAdManagerAdapter */ = {
 			isa = PBXGroup;
 			children = (
-				169F5B86967F47885978ABE79A5ED075 /* Frameworks */,
+				C09EA45DD5416C6875B1BCD8393BF66A /* Frameworks */,
 				B04C5B2C59FF3AF1BB3D6534C508BCCA /* Support Files */,
 			);
 			name = AppLovinMediationGoogleAdManagerAdapter;
@@ -1723,14 +1723,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/OguryAds";
-			sourceTree = "<group>";
-		};
-		09F2659A3988C7102020B084581740C2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				EA8CCB9A2A1B2FE26DE690E8D8BD2DB7 /* AppLovinMediationGoogleAdapter.xcframework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		1401C9F9062763C2F7D525B16C9273E3 /* Frameworks */ = {
@@ -1762,14 +1754,6 @@
 			isa = PBXGroup;
 			children = (
 				30893100F3C6ACE2CF0F081AF7581851 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		169F5B86967F47885978ABE79A5ED075 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2DCB40487B041690F53723BC7B999E55 /* AppLovinMediationGoogleAdManagerAdapter.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1857,7 +1841,7 @@
 		21526734EAF40DC8F91B6CCAE510872C /* AppLovinMediationByteDanceAdapter */ = {
 			isa = PBXGroup;
 			children = (
-				886D4CA8F8EE895AED5200A4BEEF09D7 /* Frameworks */,
+				BA2B87066154E83A3620E024BC5D177B /* Frameworks */,
 				3DB8CB43F65D3CDCB1796EAC3B3DE123 /* Support Files */,
 			);
 			name = AppLovinMediationByteDanceAdapter;
@@ -1897,7 +1881,7 @@
 		242254FC7DDFD26B4628F66265A10FA5 /* AppLovinMediationBidMachineAdapter */ = {
 			isa = PBXGroup;
 			children = (
-				486D588DBE6C46A1B0F95EAC4165BF56 /* Frameworks */,
+				3C63E5D8A234CC597B398376B03AEE38 /* Frameworks */,
 				EF9AA0D626BF7FCD7104E579315D0483 /* Support Files */,
 			);
 			name = AppLovinMediationBidMachineAdapter;
@@ -2221,6 +2205,14 @@
 			path = iAdsMaxSDK/Classes/Rewarded;
 			sourceTree = "<group>";
 		};
+		3C63E5D8A234CC597B398376B03AEE38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDD9AEE17773BE1396302FEED390379B /* AppLovinMediationBidMachineAdapter.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3CD92286B3D5384798240FCDF86119FE /* StackModules */ = {
 			isa = PBXGroup;
 			children = (
@@ -2287,14 +2279,6 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		44C7AAAA494C63FB35517F2980B757C0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				85668681BCF6ECEF0502EDB536DF98D0 /* AppLovinMediationVungleAdapter.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		45F17F63CBCF483B3632C797194ECFFE /* VungleAds */ = {
 			isa = PBXGroup;
 			children = (
@@ -2322,14 +2306,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		486D588DBE6C46A1B0F95EAC4165BF56 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				386FFE0B2D4BC9E999228E71A7A71F7C /* AppLovinMediationBidMachineAdapter.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		4B80F588DAA86D59C4F0FE53A854E584 /* iAdsCoreSDK */ = {
 			isa = PBXGroup;
 			children = (
@@ -2343,7 +2319,7 @@
 		4C2C1D7DB06592C99654569F10F5BADD /* AppLovinMediationFyberAdapter */ = {
 			isa = PBXGroup;
 			children = (
-				BDE896063D87E68514D917A04F48D74C /* Frameworks */,
+				B75DAF957CF45ADD5E63796DA34CAF76 /* Frameworks */,
 				AF0245EDAC5F15484109394A0014AF1A /* Support Files */,
 			);
 			name = AppLovinMediationFyberAdapter;
@@ -2534,6 +2510,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		70A76C82042AD1DA2387E6C5095929E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31230FF96670686B847D5FE43EDECABF /* AppLovinMediationGoogleAdapter.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7169C86E58749FD04C64DF1AE352866A /* OMSDK_Appodeal */ = {
 			isa = PBXGroup;
 			children = (
@@ -2542,6 +2526,14 @@
 			);
 			name = OMSDK_Appodeal;
 			path = OMSDK_Appodeal;
+			sourceTree = "<group>";
+		};
+		71A10BFB35A9274282C6C2B981E5EBA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				258483AE3158E5374E5977B4B5224479 /* AppLovinMediationVungleAdapter.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		774C53FC22AA360792613DCD73D1EED7 /* InterstitialVideoAd */ = {
@@ -2631,14 +2623,6 @@
 			);
 			name = Native;
 			path = iAdsMaxSDK/Classes/Native;
-			sourceTree = "<group>";
-		};
-		886D4CA8F8EE895AED5200A4BEEF09D7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D40CECFA51F6F8C1E0D260066448FD89 /* AppLovinMediationByteDanceAdapter.xcframework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		89065C412769ABB019B7E99543C4E808 /* Frameworks */ = {
@@ -2867,7 +2851,7 @@
 		AF70B1A749A699536AE0CC5632244B6B /* AppLovinMediationVungleAdapter */ = {
 			isa = PBXGroup;
 			children = (
-				44C7AAAA494C63FB35517F2980B757C0 /* Frameworks */,
+				71A10BFB35A9274282C6C2B981E5EBA2 /* Frameworks */,
 				3986EBB67679E90AF47972887C9090B5 /* Support Files */,
 			);
 			name = AppLovinMediationVungleAdapter;
@@ -2918,6 +2902,14 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		B75DAF957CF45ADD5E63796DA34CAF76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6A6BBB5DF9509A85759E1E2B3CA5661 /* AppLovinMediationFyberAdapter.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B819F499E2A39A101E43C906BDB7DB09 /* ProductPresentation-Static */ = {
 			isa = PBXGroup;
 			children = (
@@ -2954,18 +2946,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BB66A2A11C0ADCA661362B85D5DCF9FB /* Frameworks */ = {
+		BA2B87066154E83A3620E024BC5D177B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				46F2D026E1146FDA278778E36022C8F9 /* MTGSDKInterstitialVideo.xcframework */,
+				68446A76312D0C356AA7246819FD5FBC /* AppLovinMediationByteDanceAdapter.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BDE896063D87E68514D917A04F48D74C /* Frameworks */ = {
+		BB66A2A11C0ADCA661362B85D5DCF9FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F7416862564152DEB26E486FA4D6CD38 /* AppLovinMediationFyberAdapter.xcframework */,
+				46F2D026E1146FDA278778E36022C8F9 /* MTGSDKInterstitialVideo.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -3064,6 +3056,14 @@
 				29F45FAD1879FDCF7579035CC35E62AE /* Resources */,
 			);
 			name = Core;
+			sourceTree = "<group>";
+		};
+		C09EA45DD5416C6875B1BCD8393BF66A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5995C673D48A4C7A5F1A951836A0AE5 /* AppLovinMediationGoogleAdManagerAdapter.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C1EB77B7EB76D75361FF17B847794128 /* Frameworks */ = {
@@ -3231,7 +3231,7 @@
 		E9CD31D06A8BA332F25BD06879A68BB1 /* AppLovinMediationGoogleAdapter */ = {
 			isa = PBXGroup;
 			children = (
-				09F2659A3988C7102020B084581740C2 /* Frameworks */,
+				70A76C82042AD1DA2387E6C5095929E0 /* Frameworks */,
 				901C5DA68D17C8B04518DDD56524D370 /* Support Files */,
 			);
 			name = AppLovinMediationGoogleAdapter;
@@ -3808,7 +3808,7 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 			};
-			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "_Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -4051,22 +4051,22 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/OguryCore/OguryCore-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		251C4E4D1251C72E1963D985CE03EF4C /* [CP] Copy XCFrameworks */ = {
+		0F092FB61559E1FCF83BB88BDCC9D179 /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/AppLovinMediationBidMachineAdapter/AppLovinMediationBidMachineAdapter-xcframeworks.sh",
-				"${PODS_ROOT}/AppLovinMediationBidMachineAdapter/AppLovinMediationBidMachineAdapter-3.1.1.0.0/AppLovinMediationBidMachineAdapter.xcframework",
+				"${PODS_ROOT}/Target Support Files/AppLovinMediationVungleAdapter/AppLovinMediationVungleAdapter-xcframeworks.sh",
+				"${PODS_ROOT}/AppLovinMediationVungleAdapter/AppLovinMediationVungleAdapter-7.4.3.0/AppLovinMediationVungleAdapter.xcframework",
 			);
 			name = "[CP] Copy XCFrameworks";
 			outputPaths = (
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AppLovinMediationBidMachineAdapter/AppLovinMediationBidMachineAdapter.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AppLovinMediationVungleAdapter/AppLovinMediationVungleAdapter.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/AppLovinMediationBidMachineAdapter/AppLovinMediationBidMachineAdapter-xcframeworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/AppLovinMediationVungleAdapter/AppLovinMediationVungleAdapter-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3B6FA7C647D084C06D950EE5692E5802 /* [CP] Copy XCFrameworks */ = {
@@ -4085,6 +4085,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/AmazonPublisherServicesSDK/AmazonPublisherServicesSDK-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EE241F317C6CDE04BD12D32B5FD709C /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/AppLovinMediationGoogleAdapter/AppLovinMediationGoogleAdapter-xcframeworks.sh",
+				"${PODS_ROOT}/AppLovinMediationGoogleAdapter/AppLovinMediationGoogleAdapter-11.13.0.0/AppLovinMediationGoogleAdapter.xcframework",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AppLovinMediationGoogleAdapter/AppLovinMediationGoogleAdapter.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/AppLovinMediationGoogleAdapter/AppLovinMediationGoogleAdapter-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		46DECB1D623427304655E23446959DFB /* [CP] Copy XCFrameworks */ = {
@@ -4157,24 +4175,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/iAdsCoreSDK/iAdsCoreSDK-xcframeworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		57706CD08601943DD69EF026C0DE5E17 /* [CP] Copy XCFrameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/AppLovinMediationVungleAdapter/AppLovinMediationVungleAdapter-xcframeworks.sh",
-				"${PODS_ROOT}/AppLovinMediationVungleAdapter/AppLovinMediationVungleAdapter-7.4.2.1/AppLovinMediationVungleAdapter.xcframework",
-			);
-			name = "[CP] Copy XCFrameworks";
-			outputPaths = (
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AppLovinMediationVungleAdapter/AppLovinMediationVungleAdapter.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/AppLovinMediationVungleAdapter/AppLovinMediationVungleAdapter-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		593A3EFEF543FE75B2D16EFCCF761B9C /* [CP] Copy XCFrameworks */ = {
@@ -4251,24 +4251,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/OguryAds/OguryAds-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		71F1487BAD039A46B5C9E98430C2B84E /* [CP] Copy XCFrameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/AppLovinMediationFyberAdapter/AppLovinMediationFyberAdapter-xcframeworks.sh",
-				"${PODS_ROOT}/AppLovinMediationFyberAdapter/AppLovinMediationFyberAdapter-8.3.3.0/AppLovinMediationFyberAdapter.xcframework",
-			);
-			name = "[CP] Copy XCFrameworks";
-			outputPaths = (
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AppLovinMediationFyberAdapter/AppLovinMediationFyberAdapter.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/AppLovinMediationFyberAdapter/AppLovinMediationFyberAdapter-xcframeworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8791776FDE099AFC18D4390B63C88B3D /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -4285,24 +4267,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/AppLovinMediationInMobiAdapter/AppLovinMediationInMobiAdapter-xcframeworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8C22F61A011639393484713761697EB5 /* [CP] Copy XCFrameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/AppLovinMediationGoogleAdManagerAdapter/AppLovinMediationGoogleAdManagerAdapter-xcframeworks.sh",
-				"${PODS_ROOT}/AppLovinMediationGoogleAdManagerAdapter/AppLovinMediationGoogleAdManagerAdapter-11.12.0.0/AppLovinMediationGoogleAdManagerAdapter.xcframework",
-			);
-			name = "[CP] Copy XCFrameworks";
-			outputPaths = (
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AppLovinMediationGoogleAdManagerAdapter/AppLovinMediationGoogleAdManagerAdapter.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/AppLovinMediationGoogleAdManagerAdapter/AppLovinMediationGoogleAdManagerAdapter-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		94E087D4E3A897DD23A23EE821BCACA8 /* [CP] Copy XCFrameworks */ = {
@@ -4323,24 +4287,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/iComponentsSDK/iComponentsSDK-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		960248CE4D3FBFAA2042C368118DFF8B /* [CP] Copy XCFrameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/AppLovinMediationByteDanceAdapter/AppLovinMediationByteDanceAdapter-xcframeworks.sh",
-				"${PODS_ROOT}/AppLovinMediationByteDanceAdapter/AppLovinMediationByteDanceAdapter-6.3.1.0.0/AppLovinMediationByteDanceAdapter.xcframework",
-			);
-			name = "[CP] Copy XCFrameworks";
-			outputPaths = (
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AppLovinMediationByteDanceAdapter/AppLovinMediationByteDanceAdapter.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/AppLovinMediationByteDanceAdapter/AppLovinMediationByteDanceAdapter-xcframeworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9B29F0E461D50C5CED3305A0EE5180F7 /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -4359,22 +4305,22 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/UnityAds/UnityAds-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AA4A2AA08AB1BF05FF05ABF102042CE7 /* [CP] Copy XCFrameworks */ = {
+		AD1CD8A18B3F8C78D5722AF6571A57E7 /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/AppLovinMediationGoogleAdapter/AppLovinMediationGoogleAdapter-xcframeworks.sh",
-				"${PODS_ROOT}/AppLovinMediationGoogleAdapter/AppLovinMediationGoogleAdapter-11.12.0.0/AppLovinMediationGoogleAdapter.xcframework",
+				"${PODS_ROOT}/Target Support Files/AppLovinMediationGoogleAdManagerAdapter/AppLovinMediationGoogleAdManagerAdapter-xcframeworks.sh",
+				"${PODS_ROOT}/AppLovinMediationGoogleAdManagerAdapter/AppLovinMediationGoogleAdManagerAdapter-11.13.0.0/AppLovinMediationGoogleAdManagerAdapter.xcframework",
 			);
 			name = "[CP] Copy XCFrameworks";
 			outputPaths = (
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AppLovinMediationGoogleAdapter/AppLovinMediationGoogleAdapter.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AppLovinMediationGoogleAdManagerAdapter/AppLovinMediationGoogleAdManagerAdapter.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/AppLovinMediationGoogleAdapter/AppLovinMediationGoogleAdapter-xcframeworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/AppLovinMediationGoogleAdManagerAdapter/AppLovinMediationGoogleAdManagerAdapter-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ADA47340BA827BAC213EC89295738C96 /* [CP] Copy XCFrameworks */ = {
@@ -4429,6 +4375,42 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/AppLovinMediationFacebookAdapter/AppLovinMediationFacebookAdapter-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE1F36FFF7257679BE88BE42BB174E62 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/AppLovinMediationBidMachineAdapter/AppLovinMediationBidMachineAdapter-xcframeworks.sh",
+				"${PODS_ROOT}/AppLovinMediationBidMachineAdapter/AppLovinMediationBidMachineAdapter-3.1.1.0.1/AppLovinMediationBidMachineAdapter.xcframework",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AppLovinMediationBidMachineAdapter/AppLovinMediationBidMachineAdapter.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/AppLovinMediationBidMachineAdapter/AppLovinMediationBidMachineAdapter-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C422658C65A37265916004304C0D57DC /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/AppLovinMediationFyberAdapter/AppLovinMediationFyberAdapter-xcframeworks.sh",
+				"${PODS_ROOT}/AppLovinMediationFyberAdapter/AppLovinMediationFyberAdapter-8.3.4.0/AppLovinMediationFyberAdapter.xcframework",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AppLovinMediationFyberAdapter/AppLovinMediationFyberAdapter.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/AppLovinMediationFyberAdapter/AppLovinMediationFyberAdapter-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C63A70A8BCEA1351C071B3A3EB6F936F /* [CP] Copy XCFrameworks */ = {
@@ -4589,6 +4571,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/BidMachine/BidMachine-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7136154AC96B3925E6A42C71CE51C75 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/AppLovinMediationByteDanceAdapter/AppLovinMediationByteDanceAdapter-xcframeworks.sh",
+				"${PODS_ROOT}/AppLovinMediationByteDanceAdapter/AppLovinMediationByteDanceAdapter-6.4.0.6.0/AppLovinMediationByteDanceAdapter.xcframework",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AppLovinMediationByteDanceAdapter/AppLovinMediationByteDanceAdapter.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/AppLovinMediationByteDanceAdapter/AppLovinMediationByteDanceAdapter-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EA7E739C5C9902CC8C4FDA775BC5F321 /* [CP] Copy XCFrameworks */ = {
@@ -7431,7 +7431,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "_Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,

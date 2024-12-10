@@ -87,7 +87,7 @@ extension iAdsMaxSDK_OpenManager: MAAdViewAdDelegate {
                                        sub_ad_format: .open,
                                        error_code: "",
                                        message: "",
-                                       time: iAdsCoreSDK_AdTrack().getElapsedTime(startTime: self.dateStartLoad),
+                                       time: iComponentsSDK_Date.getElapsedTime(startTime: self.dateStartLoad),
                                        priority: "",
                                        recall_ad: .no)
         
@@ -106,7 +106,7 @@ extension iAdsMaxSDK_OpenManager: MAAdViewAdDelegate {
                                        sub_ad_format: .open,
                                        error_code: "\(error.code.rawValue)",
                                        message: error.message,
-                                       time: iAdsCoreSDK_AdTrack().getElapsedTime(startTime: self.dateStartLoad),
+                                       time: iComponentsSDK_Date.getElapsedTime(startTime: self.dateStartLoad),
                                        priority: "",
                                        recall_ad: .no)
         completionLoad?(.failure(NSError.init(domain: error.message, code: error.code.rawValue)))
