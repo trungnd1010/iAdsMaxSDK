@@ -92,6 +92,7 @@ extension iAdsMaxSDK_OpenManager: MAAdViewAdDelegate {
                                        recall_ad: .no)
         
         completionLoad?(.success(()))
+        completionLoad = nil
     }
     
     public func didFailToLoadAd(forAdUnitIdentifier adUnitIdentifier: String, withError error: MAError) {
@@ -110,6 +111,7 @@ extension iAdsMaxSDK_OpenManager: MAAdViewAdDelegate {
                                        priority: "",
                                        recall_ad: .no)
         completionLoad?(.failure(NSError.init(domain: error.message, code: error.code.rawValue)))
+        completionLoad = nil
     }
     
     public func didDisplay(_ ad: MAAd) {
@@ -143,6 +145,7 @@ extension iAdsMaxSDK_OpenManager: MAAdViewAdDelegate {
                                        priority: priority,
                                        recall_ad: .no)
         completionShow?(.success(()))
+        completionShow = nil
     }
     
     public func didClick(_ ad: MAAd) {
@@ -176,6 +179,7 @@ extension iAdsMaxSDK_OpenManager: MAAdViewAdDelegate {
                                            priority: priority,
                                            recall_ad: .no)
         completionShow?(.failure(NSError(domain: error.message, code: error.code.rawValue)))
+        completionShow = nil
     }
 }
 

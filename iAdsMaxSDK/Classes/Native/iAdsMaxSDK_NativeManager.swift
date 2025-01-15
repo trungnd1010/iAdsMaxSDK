@@ -156,6 +156,7 @@ extension iAdsMaxSDK_NativeManager: MANativeAdDelegate {
                                        recall_ad: .no)
         nativeAdLoader.nativeAdDelegate = nil
         completionLoad?(.success(()))
+        completionLoad = nil
     }
     
     public func didClickNativeAd(_ ad: MAAd) {
@@ -192,6 +193,7 @@ extension iAdsMaxSDK_NativeManager: MANativeAdDelegate {
                                        priority: "",
                                        recall_ad: .no)
         completionLoad?(.failure(NSError.init(domain: error.message, code: error.code.rawValue)))
+        completionLoad = nil
     }
     
     public func didExpireNativeAd(_ ad: MAAd) {
@@ -202,6 +204,7 @@ extension iAdsMaxSDK_NativeManager: MANativeAdDelegate {
 extension iAdsMaxSDK_NativeManager: MAAdRevenueDelegate  {
     public func didPayRevenue(for ad: MAAd) {
         completionShow?(.success(()))
+        completionShow = nil
         let revenue = ad.revenue
         self.adNetwork = ad.networkName
         
